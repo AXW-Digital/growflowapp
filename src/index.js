@@ -9,6 +9,7 @@ import './assets/css/index.css';
 import App from './App';
 import Signin from './components/Signin';
 import Signup from './components/Signup';
+import HomePage from './pages/HomePage';
 
 // RouterDOM
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -30,6 +31,7 @@ const Root = () => (
                     <Route component={App} exact path="/" />
                     <Route component={Signin} path="/signin" />
                     <Route component={Signup} path="/signup" />
+                    <Route component={HomePage} path = "/home" />
                 </Switch>
         </React.Fragment>
     </Router>

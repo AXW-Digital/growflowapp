@@ -69,6 +69,7 @@ h3 {
   margin: 5ex 0 3ex 0 !important;
 }
 
+
 #page-top{
   position: absolute;
   top: 0;
@@ -159,6 +160,8 @@ h3 {
     background-color: #f1eeddf5 !important;
   }
 }
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -188,7 +191,7 @@ h3 {
   margin: 0 0 10px 0;
   font-weight: bold;
   line-height: 56px;
-  color: #0f0f0f;
+  color: #363a59;
 }
 
 #hero h2 {

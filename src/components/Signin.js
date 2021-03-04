@@ -39,16 +39,16 @@ class Signin extends Component {
                                             <div className="col"><hr /></div>
                                         </div>
                                         <div className='row justify-content-between ml-xl-4 mr-xl-4 ml-0 mr-0'>
-                                            <a href="#" className="fab fa-facebook-f btn-some align-items-center justify-content-center"></a>
-                                            <a href="#" className="fab fa-google btn-some align-items-center justify-content-center"></a>
-                                            <a href="#" className="fab fa-linkedin btn-some align-items-center justify-content-center"></a>
-                                            <a href="#" className="fab fa-twitter btn-some align-items-center justify-content-center"></a>
+                                            <a href="/home" className="fab fa-facebook-f btn-some align-items-center justify-content-center"></a>
+                                            <a href="/home" className="fab fa-google btn-some align-items-center justify-content-center"></a>
+                                            <a href="/home" className="fab fa-linkedin btn-some align-items-center justify-content-center"></a>
+                                            <a href="/home" className="fab fa-twitter btn-some align-items-center justify-content-center"></a>
                                         </div>
                                         <hr className='my-4' />
                                         <div className='row mt-1'>
                                             <div className='col text-center text-nowrap'>Ei käyttäjätunnusta?</div>
                                             <div className='col text-center'>
-                                                <a href='/signup' className='link-primary'>Rekisteröidy</a>
+                                                <a href='/home' className='link-primary'>Rekisteröidy</a>
                                             </div>
                                         </div>
                                     </form>
