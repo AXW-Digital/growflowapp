@@ -19,6 +19,7 @@
 
 
 
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -135,7 +136,6 @@ h3 {
   color: #363a59;
 }
 
-
 #main {
   margin-top: 72px;
 }
@@ -143,20 +143,20 @@ h3 {
   #header {
     background: #ffd000ea;
   }
-  #header .mr-auto {
-    margin-top: 1rem;
-  }
   #header .mylinks{
     font-weight: bold;
-    background-color: #e2b11194;;
     color:  #363a59a4;
     text-indent: 1ex;
   }
   #header .signlinks{
     font-weight: bold;
-    background-color: #e2b11194;;
     color:  #363a59;
     text-indent: 1ex;
+  }
+
+  #responsive-navbar-nav{
+    margin-top: 2ex;
+    background-color: #f1eeddf5 !important;
   }
 }
 /*--------------------------------------------------------------
@@ -322,6 +322,10 @@ h3 {
     display: inline-block;
   }
   
+}
+
+#hero > div > div > div.col-lg-6.pt-5.pt-lg-0.order-2.order-lg-2 > p {
+  margin-bottom: 20px;
 }
 
 @-webkit-keyframes up-down {
