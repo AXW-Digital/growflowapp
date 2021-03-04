@@ -16,7 +16,7 @@ const Footer= () => (
                         </div>
 
                         <div className="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="200">
-                            <h4>Pikaalinkit</h4>
+                            <h4>Pikalinkit</h4>
                             <ul>
                             <li> <a href="#kukka">Visio</a></li>
                             <li><a href="#kasvut">Kasvuvaikkutaja</a></li>
