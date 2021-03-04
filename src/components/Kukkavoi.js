@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {ReactComponent as Messages} from './../assets/images/messages.svg'
 import { Card } from 'react-bootstrap'
 
 
-class Kukkavoi extends Component {
+class Kukkavoi extends React.Component {
     render() {
         return (
             <div>
