@@ -18,8 +18,8 @@ class Vaikuttava extends React.Component {
                                 <h1>Olet vaikuttava!</h1>
                                 <p>Kasvuvaikuttajana autat luomaan parempaa ymmärrystä elämyspuolen palveluista.
                                     Ole mukana muokkaamassa tulevaisuutta!</p>
-                                <a href="/signin" onClick={this.greetings} className="btn-get-started scrollto">kirjaudu</a>
-                                <a href="/signup" onClick={this.greetings} className="btn-get-rekister scrollto">rekisteröidy</a>
+                                <a href="/signin" onClick={this.greetings} className="btn-get-started scrollto">Kirjaudu</a>
+                                <a href="/signup" onClick={this.greetings} className="btn-get-rekister scrollto">Rekisteröidy</a>
                             </div>
                             <div className="col-lg-6 order-1 order-lg-1 hero-img">
                                 <div className="img-fluid animated">

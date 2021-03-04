@@ -16,8 +16,8 @@ class Header extends React.Component {
                 <Nav.Link className="mylinks" href="#voima">Voima</Nav.Link>
             </Nav>
             <Nav className='ml-auto'>
-                <Nav.Link href="/signin" className='ml-auto'>Signin</Nav.Link>
-                <Nav.Link href="/signup"className='ml-auto'>Signup</Nav.Link>
+                <Nav.Link href="/signin" className="mylinks">Kirjaudu</Nav.Link>
+                <Nav.Link href="/signup" className="mylinks">Rekisteröidy</Nav.Link>
             </Nav>
             
             </Navbar.Collapse>

@@ -61,6 +61,7 @@ section {
   bottom: 15px;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
+  background: #ffd00044!important;
 }
 
 .back-to-top i {
@@ -88,10 +89,12 @@ section {
   background: white;
   box-shadow: 0px 2px 15px #363a59;
   font-weight: bold;
+  font-family: 'TT Norms' !important;
 }
 #header .logo {
   color: #363a59 !important;
   font-weight: bold;
+  margin-left: 2ex;
 }
 
 #header .mylinks{
@@ -120,6 +123,9 @@ section {
 # Navigation Menu
 --------------------------------------------------------------*/
 
+.navbar-toggler{
+  margin-right: 2ex;
+}
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -155,31 +161,31 @@ section {
 
 #hero .btn-get-started {
   font-family: "TT Norms";
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: 16px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   display: inline-block;
   padding: 8px 28px;
   border: 2px solid #51486e;
   border-radius: 40px;
   transition: 0.5s;
   margin: 10px;
-  color: #0f0f0f;
+  color: #363a59;
   background: #edbf07;
   text-decoration: none;
 }
 #hero .btn-get-rekister {
   font-family: "TT Norms";
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: 16px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   display: inline-block;
   padding: 8px 28px;
   border: 2px solid #51486e;
   border-radius: 40px;
   transition: 0.5s;
   margin: 10px;
-  color: #0f0f0f;
+  color: #363a59;
   background: #fff;
   text-decoration: none;
 }
