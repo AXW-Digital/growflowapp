@@ -18,11 +18,25 @@ h1, h2, h3, h4, h5 .font-primary {
 }
 
 h1 .font-primary {
-  font-size: 60px;
+  font-size: 48px;
 }
 
+h2 .font-primary {
+  font-size: 30px;
+}
+
+h3 .font-primary {
+  font-size: 28px;
+}
+
+h4 .font-primary {
+  font-size: 28px;
+}
 p, .hyodyt .font-primary {
   font-family: "TT Norms Light";
+}
+p .font-primary {
+  font-size: 20px;
 }
 section {
   padding: 60px 0;
@@ -31,6 +45,7 @@ section {
 .section-bg {
   background-color: #fef8f5;
 }
+
 
 
 /*--------------------------------------------------------------
@@ -71,45 +86,34 @@ section {
   transition: all 0.5s;
   padding: 15px 0;
   background: white;
-
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-.text-dark{
+  box-shadow: 0px 2px 15px #363a59;
   font-weight: bold;
 }
-.mylinks{
+#header .logo {
+  color: #363a59 !important;
   font-weight: bold;
 }
-#header .logo h1 {
-  font-size: 25px;
-  margin: 0;
-  padding: 6px 0;
-  line-height: 1;
-  font-weight: 400;
-  letter-spacing: 2px;
+
+#header .mylinks{
+  font-weight: bold;
+  color: #363a59;
 }
 
-#header .logo h1 a, #header .logo h1 a:hover {
-  color: #0f0f0f;
-  text-decoration: none;
-}
-
-#header .logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
-}
 
 #main {
   margin-top: 72px;
 }
 @media (max-width: 575px) {
   #header {
-    background: #edbf07;
+    background: #ffd000ea;
   }
-  .mylinks{
+  #header .mr-auto {
+    margin-top: 1rem;
+  }
+  #header .mylinks{
     font-weight: bold;
-    color: #eb5d1e;
+    background-color: #e2b11194;;
+    color:  #363a59;
   }
 }
 /*--------------------------------------------------------------
@@ -128,18 +132,10 @@ section {
   margin: 10rem 0 -72px 0;
 }
 
-#hero .description{
-  font-family: "TT Norms";
-  font-size: 24px;
-  color: rgba(63,61,86,1);
-  border-left-width: 1.5ex !important;
-  border-left-color: #ffcf00 !important;
-  color: rgba(63,61,86,1) !important;
-}
+
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
   font-weight: bold;
   line-height: 56px;
   color: #0f0f0f;
@@ -313,25 +309,17 @@ kasvuvaikuttajan section
 }
 
 #kasvut .description{
-  font-family: "TT Norms";
-  font-size: 24px;
+  font-family: "TT Norms Light";
+  font-size: 20px;
   color: rgba(63,61,86,1);
   border-left-width: 1.5ex !important;
   border-left-color: #ffcf00 !important;
   color: rgba(63,61,86,1) !important;
 }
 
-#kasvut .hyodyt{
-  font-family: "TT Norms";
-  font-size: 24px;
-  color: rgba(63,61,86,1);
-  border-left-width: 1.5ex !important;
-  border-left-color: #ffcf00 !important;
-  color: rgba(63,61,86,1) !important;
-}
+
 #kasvut h3 {
   margin: 0 0 10px 0;
-  font-size: 30px;
   font-weight: bold;
   color: rgba(63,61,86,1);
 }
@@ -429,7 +417,7 @@ kasvuvaikuttajan section
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
   #kasvut .description{
-    font-family: "TT Norms";
+    font-family: "TT Norms Light";
     font-size: 18px;
     color: rgba(63,61,86,1);
     border-left-width: 1.5ex !important;
@@ -441,11 +429,7 @@ kasvuvaikuttajan section
     margin: 72px 0 -72px 0;
     height: 100%;
   }
-  #kasvut .hyodyt{
-    font-family: "TT Norms";
-    font-size: 18px;
-    color: rgba(63,61,86,1);
-  }
+
 }
 
 @-webkit-keyframes up-down {
@@ -487,8 +471,8 @@ kukka begins
 }
 
 #kukka .description{
-  font-family: "TT Norms";
-  font-size: 24px;
+  font-family: "TT Norms Light";
+  font-size: 20px;
   color: rgba(63,61,86,1);
   border-left-width: 1.5ex !important;
   border-left-color: #ffcf00 !important;
@@ -497,7 +481,7 @@ kukka begins
 
 #kukka .hyodyt{
   
-  font-size: 24px;
+  font-size: 20px;
   color: rgba(63,61,86,1);
   border-left-width: 1.5ex !important;
   border-left-color: #ffcf00 !important;
@@ -505,7 +489,6 @@ kukka begins
 }
 #kukka h3 {
   margin: 0 0 10px 0;
-  font-size: 30px;
   font-weight: bold;
   color: rgba(63,61,86,1);
 }
@@ -518,8 +501,8 @@ kukka begins
   color: #0f0f0f;
 }
 #kukka p {
-  color: #0f0f0f;
   font-size: 20px;
+  color: #0f0f0f;
   color: rgba(63,61,86,1)
 }
 #kukka .container{
@@ -603,7 +586,7 @@ kukka begins
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
   #kukka .description{
-    font-family: "TT Norms";
+    font-family: "TT Norms Light";
     font-size: 18px;
     color: rgba(63,61,86,1);
     border-left-width: 1.5ex !important;
@@ -616,7 +599,6 @@ kukka begins
     height: 100%;
   }
   #kukka .hyodyt{
-    font-family: "TT Norms";
     font-size: 18px;
     color: rgba(63,61,86,1);
   }
@@ -662,25 +644,17 @@ growflow begins
 }
 
 #growflow .description{
-  font-family: "TT Norms";
-  font-size: 24px;
+  font-family: "TT Norms Light";
+  font-size: 20px;
   color: rgba(63,61,86,1);
   border-left-width: 1.5ex !important;
   border-left-color: #ffcf00 !important;
   color: rgba(63,61,86,1) !important;
 }
 
-#growflow .hyodyt{
-  font-family: "TT Norms";
-  font-size: 24px;
-  color: rgba(63,61,86,1);
-  border-left-width: 1.5ex !important;
-  border-left-color: #ffcf00 !important;
-  color: rgba(63,61,86,1) !important;
-}
+
 #growflow h3 {
   margin: 0 0 10px 0;
-  font-size: 30px;
   font-weight: bold;
   color: rgba(63,61,86,1);
 }
@@ -777,7 +751,7 @@ growflow begins
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
   #growflow .description{
-    font-family: "TT Norms";
+    font-family: "TT Norms Light";
     font-size: 18px;
     color: rgba(63,61,86,1);
     border-left-width: 1.5ex !important;
@@ -789,11 +763,7 @@ growflow begins
     margin: 72px 0 -72px 0;
     height: 100%;
   }
-  #growflow .hyodyt{
-    font-family: "TT Norms";
-    font-size: 18px;
-    color: rgba(63,61,86,1);
-  }
+
 }
 
 @-webkit-keyframes up-down {
@@ -834,32 +804,23 @@ voima begins
 }
 
 #voima .description{
-  font-family: "TT Norms";
-  font-size: 24px;
+  font-family: "TT Norms Light";
+  font-size: 20px;
   color: rgba(63,61,86,1);
   border-left-width: 1.5ex !important;
   border-left-color: #ffcf00 !important;
   color: rgba(63,61,86,1) !important;
 }
 
-#voima .hyodyt{
-  font-family: "TT Norms";
-  font-size: 24px;
-  color: rgba(63,61,86,1);
-  border-left-width: 1.5ex !important;
-  border-left-color: #ffcf00 !important;
-  color: rgba(63,61,86,1) !important;
-}
+
 #voima h3 {
   margin: 0 0 10px 0;
-  font-size: 30px;
   font-weight: bold;
   color: rgba(63,61,86,1);
 }
 
 #voima h2 {
   margin: 0 0 10px 0;
-  font-size: 24px;
   font-weight: 700;
   line-height: 56px;
   color: #0f0f0f;
@@ -914,11 +875,9 @@ voima begins
 
 @media (max-width: 768px) {
   #voima h1 {
-    font-size: 28px;
     line-height: 36px;
   }
   #voima h2 {
-    font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
@@ -948,24 +907,21 @@ voima begins
     -webkit-animation: none;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+ 
+  #voima {
+    border-bottom: 2px solid #fcebe3;
+    margin: 72px 0 -72px 0;
+    height: 100%;
+  }
   #voima .description{
-    font-family: "TT Norms";
+    font-family: "TT Norms Light";
     font-size: 18px;
     color: rgba(63,61,86,1);
     border-left-width: 1.5ex !important;
     border-left-color: #ffcf00 !important;
     color: rgba(63,61,86,1) !important;
   }
-  #voima {
-    border-bottom: 2px solid #fcebe3;
-    margin: 72px 0 -72px 0;
-    height: 100%;
-  }
-  #voima .hyodyt{
-    font-family: "TT Norms";
-    font-size: 18px;
-    color: rgba(63,61,86,1);
-  }
+
 }
 
 @-webkit-keyframes up-down {

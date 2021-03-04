@@ -6,7 +6,7 @@ class Header extends React.Component {
     render() {
         return (
             <Navbar id="header" fixed="top" collapseOnSelect expand="lg"  variant="light">
-            <Navbar.Brand className="text-dark" href="/">Growflow Insights</Navbar.Brand>
+            <Navbar.Brand className="logo" style={{color: '#363a59'}} href="/">Growflow Insights</Navbar.Brand>
             <Navbar.Toggle className="text-danger" aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
