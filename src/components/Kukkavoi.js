@@ -7,7 +7,7 @@ class Kukkavoi extends React.Component {
     render() {
         return (
             <div>
-                  <section id="kukka" className="d-flex align-items-center">
+                  <section id="kukka" className="d-flex align-items-center jumptarget">
                     <div className="container">
                     <div className="row">
                         <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1">

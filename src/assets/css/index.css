@@ -7,8 +7,24 @@
 }
 
 /*--------------------------------------------------------------
+# Global variables
+--------------------------------------------------------------*/
+
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+  --header-height: 72px;
+}
+
+html {
+  scroll-padding-top: var(--header-height); /* height of sticky header */
+}
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
 a:hover {
   text-decoration: none;
 }
@@ -40,10 +56,15 @@ p .font-primary {
 }
 section {
   padding: 60px 0;
+  min-height: calc(100vh - var(--header-height));
 }
 
 .section-bg {
   background-color: #fef8f5;
+}
+
+h3 {
+  margin: 5ex 0 3ex 0 !important;
 }
 
 
@@ -81,7 +102,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 72px;
+  height: var(--header-height);
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
@@ -1069,10 +1090,7 @@ voima ends
 /* -----------------------------------------------
 Signin and Signup component css
 -------------------------------------------------- */
-:root {
-  --input-padding-x: 1.5rem;
-  --input-padding-y: .75rem;
-}
+
 .bx-sign{
   color: rgb(90 87 123) !important
 }
