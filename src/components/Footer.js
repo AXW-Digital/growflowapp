@@ -52,7 +52,7 @@ const Footer= () => (
                                 <i className="bx bxl-linkedin"></i>
                             </a>
                                 <a 
-                                    href="#hero" 
+                                    href="#page-top" 
                                     className="back-to-top">
                                     <i class='bx bxs-chevrons-up' ></i>
                                 </a>
