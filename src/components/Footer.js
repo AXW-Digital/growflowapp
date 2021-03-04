@@ -54,7 +54,7 @@ const Footer= () => (
                                 <a 
                                     href="#hero" 
                                     className="back-to-top">
-                                    <i className="bx bxs-up-arrow-alt"></i>
+                                    <i class='bx bxs-chevrons-up' ></i>
                                 </a>
                             
                             </div>

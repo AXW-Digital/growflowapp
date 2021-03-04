@@ -61,14 +61,14 @@ section {
   bottom: 15px;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
-  background: #ffd00044!important;
+  background: #e2b11194!important;
+  color: white!important;
 }
 
 .back-to-top i {
   font-size: 24px;
-  position: center;
-  top: 8px;
-  left: 8px;
+  position: relative;
+  bottom: 2.5px
 }
 
 .back-to-top:hover {
@@ -99,6 +99,11 @@ section {
 
 #header .mylinks{
   font-weight: bold;
+  color:  #363a59a4;
+}
+
+#header .signlinks{
+  font-weight: bold;
   color: #363a59;
 }
 
@@ -116,7 +121,14 @@ section {
   #header .mylinks{
     font-weight: bold;
     background-color: #e2b11194;;
+    color:  #363a59a4;
+    text-indent: 1ex;
+  }
+  #header .signlinks{
+    font-weight: bold;
+    background-color: #e2b11194;;
     color:  #363a59;
+    text-indent: 1ex;
   }
 }
 /*--------------------------------------------------------------
@@ -126,6 +138,8 @@ section {
 .navbar-toggler{
   margin-right: 2ex;
 }
+
+
 
 /*--------------------------------------------------------------
 # Hero Section
