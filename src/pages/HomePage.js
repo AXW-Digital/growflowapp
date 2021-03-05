@@ -50,7 +50,7 @@ export default class HomePage extends Component {
                 <section id='kyselyt' className="d-flex align-items-center justify-content-center bg-light kysely">
                     <div className="container card-container" data-aos="fade-up">
                         <header class="section-header">
-                            <h2>Kyselyt</h2>
+                            <h3>Kyselyt</h3>
                             <p>Veritatis et dolores facere numquam et praesentium</p>
                         </header>
                         <div class="row g-4 d-flex">
