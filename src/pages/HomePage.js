@@ -57,6 +57,9 @@ export default class HomePage extends Component {
                         <FormCard kysely={mcdonalds_1} />
                         <FormCard kysely={hese_1} />
                         <FormCard kysely={burgerking_1} />
+                        <FormCard kysely={hese_1} />
+                        <FormCard kysely={mcdonalds_1} />
+                        <FormCard kysely={burgerking_1} />
                         </div>
                     </div>
                 </section>

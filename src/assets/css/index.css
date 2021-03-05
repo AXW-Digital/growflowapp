@@ -1347,12 +1347,18 @@ Kysely Cards CSS
   font-weight: bold;
   color: rgba(63,61,86,1);
 }
+
+.kysely .kysely-card{
+  margin-bottom: 4ex;
+}
+
 .kysely .card-container{
   max-width: 1300px;
 }
 
 .kysely .btn-card{
   background-color:#363a59!important;
+  width: min(50%, 170px)
 }
 
 .kysely .kysely-card .row {
@@ -1372,7 +1378,7 @@ height: 35%!important;
 overflow: hidden;
 }
 .kysely .kysely-card .row-text{
-  height: 35%!important;
+  height: 30%!important;
   overflow: hidden;
 }
 .kysely .kysely-card  .row-title{
@@ -1380,7 +1386,7 @@ overflow: hidden;
   overflow: hidden;
 }
 .kysely .kysely-card  .row-button{
-  height: 5%!important;
+  height: 10%!important;
   overflow: visible;
 }
 

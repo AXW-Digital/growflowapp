@@ -1,9 +1,19 @@
 import React, { Component } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
+
 
 export default class FormCard extends Component {
+    componentDidMount(){
+        AOS.init({
+          duration : 1500,
+          once: true
+        })
+      }
     render() {
         return (
-            <div className="col-xl-4 col-md-6 my-3 kysely-col" data-aos="fade-up" data-aos-delay="200">
+            <div className="col-xl-4 col-md-6 my-3 kysely-col" data-aos="fade-up" data-aos-delay="50">
 
                 <div className={`kysely-card ${this.props.kysely.color}`}>
                     <div className='container-fluid'>
@@ -22,7 +32,7 @@ export default class FormCard extends Component {
                             <p className="card-text">{this.props.kysely.formText}</p>
                         </div>
                         <div className='row row-button'>
-                            <a href={this.props.kysely.formUrl} className="btn btn-primary btn-card">Vastaa</a>
+                            <a href={this.props.kysely.formUrl} className="btn btn-primary btn-card d-flex">Vastaa</a>
                         </div>
                     </div>
                 </div>
