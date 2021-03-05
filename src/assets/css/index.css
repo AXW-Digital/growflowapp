@@ -1018,6 +1018,10 @@ voima ends
   font-size: 14px;
 }
 
+#footer h3{
+  margin-top: 0 !important;
+}
+
 #footer .footer-top {
   padding: 60px 0 30px 0;
   color: white;
@@ -1026,6 +1030,7 @@ voima ends
 
 
 #footer .footer-top h4 {
+  padding-top: 1ex;
   font-size: 16px;
   font-weight: bold;
   color: white;

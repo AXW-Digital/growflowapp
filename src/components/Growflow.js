@@ -23,7 +23,7 @@ class Growflow extends Component {
                             viinibaareja...
                         </p>
                         <div className="icon-box">
-                            <Card className="description shadow-lg p-3 mb-5 bg-white rounded">
+                            <Card className="description shadow-lg p-3 mb-5 bg-white rounded" data-aos="flip-up" data-aos-duration="200" data-aos-delay="300">
                             Kumppanimme ovat nautiskeluun erikoistuneita yrityksiä ja palveluntarjoajia
                             </Card>
                         </div>

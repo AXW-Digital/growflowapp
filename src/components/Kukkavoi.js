@@ -17,7 +17,7 @@ class Kukkavoi extends React.Component {
                                 tuotteisiin ja palveluihin, ovat tervetulleita kasvuvaikuttajiin.
                             </p>
                             <div className="icon-box">
-                                <Card className="description shadow-lg p-3 mb-5 bg-white rounded">
+                                <Card className="description shadow-lg p-3 mb-5 bg-white rounded" data-aos="flip-up" data-aos-duration="200" data-aos-delay="300">
                                 Oletko kiinnostunut vaikuttamaan sinulle tarjottuihin palveluihin ja tuotteisiin? 
                                 Tervetuloa joukkoomme!
                                 </Card>

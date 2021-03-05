@@ -13,7 +13,7 @@ export default class FormCard extends Component {
       }
     render() {
         return (
-            <div className="col-xl-4 col-md-6 my-3 kysely-col" data-aos="fade-up" data-aos-delay="50">
+            <div className="col-xl-4 col-md-6 my-3 kysely-col" data-aos="fade-up" data-aos-delay="200">
 
                 <div className={`kysely-card ${this.props.kysely.color}`}>
                     <div className='container-fluid'>

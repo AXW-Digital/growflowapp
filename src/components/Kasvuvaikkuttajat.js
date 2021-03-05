@@ -19,7 +19,7 @@ class Kasvuvaikkuttajat extends React.Component {
                             <h2>Erilaisia tutkimuksia</h2>
                             <p>Emme halua täyttää sähköpostiasi turhilla ilmoituksilla.</p>
                             <div className="icon-box">
-                                <Card className="description shadow-lg p-3 mb-5 bg-white rounded">
+                                <Card className="description shadow-lg p-3 mb-5 bg-white rounded " data-aos="flip-up" data-aos-duration="200" data-aos-delay="300">
                                 Kasvuvaikuttajana pääset testaaman kumppaniemme uusia tuotteita ja palveluita ensimmäisenä.
                                 </Card>
                             </div>
