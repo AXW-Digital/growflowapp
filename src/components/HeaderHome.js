@@ -11,6 +11,7 @@ class Header extends React.Component {
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
                 <Nav.Link className="mylinks" href="#kyselyt">Kyselyt</Nav.Link>
+                <Nav.Link className="mylinks" href="#menutestaus">Menutestaukset</Nav.Link>
             </Nav>
             <Nav className='ml-auto'>
                 <Nav.Link href="/signin" className="bx bxs-user bx-md signlinks"></Nav.Link>

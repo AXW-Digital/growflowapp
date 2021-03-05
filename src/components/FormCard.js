@@ -32,7 +32,7 @@ export default class FormCard extends Component {
                             <p className="card-text">{this.props.kysely.formText}</p>
                         </div>
                         <div className='row row-button'>
-                            <a href={this.props.kysely.formUrl} className="btn btn-primary btn-card d-flex">Vastaa</a>
+                            <a href={this.props.kysely.formUrl} className="btn btn-primary btn-card my-auto text-center">{this.props.tyyppi} {this.props.kysely.minutes}</a>
                         </div>
                     </div>
                 </div>
@@ -44,16 +44,3 @@ export default class FormCard extends Component {
 }
 
 
-
-
-{/* <div className="card form-card">
-<img className="card-img-top"
-    src={this.props.kysely.picUrl}
-    alt={this.props.kysely.name}
-/>
-<div className="card-body">
-    <h5 className="card-title">{this.props.kysely.formTitle}</h5>
-    <p className="card-text">{this.props.kysely.formText}</p>
-    <a href={this.props.kysely.formUrl} className="btn btn-primary btn-card">Vastaa</a>
-</div>
-</div> */}
