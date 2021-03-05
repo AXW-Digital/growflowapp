@@ -6,6 +6,26 @@ import { ReactComponent as Ideas } from '../assets/images/ideas.svg'
 var Name = 'John Doe'
 
 
+const mcdonalds_1 = {
+    name: "McDonald's", picUrl: '/img/mcd.jfif', formTitle: 'McFeedback™',
+    formText: 'Miten meillä meni? Anna palautetta viimeisimmästä ravintolakäynnistäsi ja auta meitä kehittämään toimintaamme.',
+    formUrl: '#'
+}
+
+const hese_1 = {
+    name: "Hesburger", picUrl: '#', formTitle: 'KIITÄ, MOITI, KYSY TAI EHDOTA',
+    formText: 'Saitko Hesburgerissa erityisen mukavaa palvelua? Huomasitko jossain parantamisen varaa? Haluaisitko valikoimiimme uusia tuotteita? Kaikki palaute on meille arvokasta. ',
+    formUrl: '#'
+}
+
+const burgerking_1 = {
+    name: "Burger King", picUrl: '#', formTitle: 'Oma BK-Kokemukseni',
+    formText: 'Tervetuloa Minun BURGER KING® -kokemukseni -kyselyyn. Arvostamme rehellistä palautettasi ja sitä, että käytät aikaasi kyselyyn vastaamiseen.',
+    formUrl: '#'
+}
+
+
+
 export default class HomePage extends Component {
     render() {
         return (
@@ -27,11 +47,17 @@ export default class HomePage extends Component {
                         </div>
                     </div>
                 </section>
-                <section id='tasks' className="d-flex align-items-center justify-content-center bg-light">
-                    <div className="row">
-                        <FormCard/>
-                        <FormCard/>
-                        <FormCard/>
+                <section id='kyselyt' className="d-flex align-items-center justify-content-center bg-light kysely">
+                    <div className="container" data-aos="fade-up">
+                        <header class="section-header">
+                            <h2>Kyselyt</h2>
+                            <p>Veritatis et dolores facere numquam et praesentium</p>
+                        </header>
+                        <div class="row gy-4">
+                        <FormCard kysely={mcdonalds_1} />
+                        <FormCard kysely={hese_1} />
+                        <FormCard kysely={burgerking_1} />
+                        </div>
                     </div>
                 </section>
                 <Footer />

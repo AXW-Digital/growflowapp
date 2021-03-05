@@ -14,6 +14,7 @@
   --input-padding-x: 1.5rem;
   --input-padding-y: .75rem;
   --header-height: 72px;
+  --kysely-card-image-max-width: 200px; 
 }
 
 
@@ -1332,4 +1333,176 @@ input[type="checkbox"]:focus,
   .form-label-group input:-ms-input-placeholder {
     color: #777;
   }
+}
+
+
+
+/* -----------------------------------------------
+Kysely Cards CSS
+-------------------------------------------------- */
+
+.kysely .btn-card{
+  background-color:#363a59!important;
+}
+
+.kysely .kysely-card .card-text{
+  text-align: justify;
+}
+
+.kysely .kysely-card {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  height: 100%;
+  padding: 30px 30px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.kysely .kysely-card .card-image-container {
+  /* max-width: var(--kysely-card-image-max-width); */
+}
+
+.kysely .kysely-card img {
+  font-size: 36px;
+  padding: 30px 20px;
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  transition: 0.3s;
+  width:100%;
+  /* max-width: var(--kysely-card-image-max-width); */
+}
+
+
+
+.kysely .kysely-card h3 {
+  color: #444444;
+  font-weight: 700;
+  margin: 2rem 0 1rem 0 !important;
+}
+
+.kysely .kysely-card .read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px;
+}
+
+.kysely .kysely-card .read-more i {
+  line-height: 0;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.kysely .kysely-card.blue {
+  border-bottom: 3px solid #2db6fa;
+}
+
+.kysely .kysely-card.blue .icon {
+  color: #2db6fa;
+  background: #dbf3fe;
+}
+
+.kysely .kysely-card.blue .read-more {
+  color: #2db6fa;
+}
+
+.kysely .kysely-card.blue:hover {
+  background: #2db6fa;
+}
+
+.kysely .kysely-card.orange {
+  border-bottom: 3px solid #f68c09;
+}
+
+.kysely .kysely-card.orange .icon {
+  color: #f68c09;
+  background: #fde3c4;
+}
+
+.kysely .kysely-card.orange .read-more {
+  color: #f68c09;
+}
+
+.kysely .kysely-card.orange:hover {
+  background: #f68c09;
+}
+
+.kysely .kysely-card.green {
+  border-bottom: 3px solid #08da4e;
+}
+
+.kysely .kysely-card.green .icon {
+  color: #08da4e;
+  background: #cffddf;
+}
+
+.kysely .kysely-card.green .read-more {
+  color: #08da4e;
+}
+
+.kysely .kysely-card.green:hover {
+  background: #08da4e;
+}
+
+.kysely .kysely-card.red {
+  border-bottom: 3px solid #e9222c;
+}
+
+.kysely .kysely-card.red .icon {
+  color: #e9222c;
+  background: #fef7f8;
+}
+
+.kysely .kysely-card.red .read-more {
+  color: #e9222c;
+}
+
+.kysely .kysely-card.red:hover {
+  background: #e9222c;
+}
+
+.kysely .kysely-card.purple {
+  border-bottom: 3px solid #b50edf;
+}
+
+.kysely .kysely-card.purple .icon {
+  color: #b50edf;
+  background: #f8e4fd;
+}
+
+.kysely .kysely-card.purple .read-more {
+  color: #b50edf;
+}
+
+.kysely .kysely-card.purple:hover {
+  background: #b50edf;
+}
+
+.kysely .kysely-card.pink {
+  border-bottom: 3px solid #f51f9c;
+}
+
+.kysely .kysely-card.pink .icon {
+  color: #f51f9c;
+  background: #feecf7;
+}
+
+.kysely .kysely-card.pink .read-more {
+  color: #f51f9c;
+}
+
+.kysely .kysely-card.pink:hover {
+  background: #f51f9c;
+}
+
+.kysely .kysely-card:hover h3, .kysely .kysely-card:hover p, .kysely .kysely-card:hover .read-more {
+  color: #fff;
+}
+
+.kysely .kysely-card:hover .icon {
+  background: #fff;
 }
