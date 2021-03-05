@@ -1359,6 +1359,7 @@ Kysely Cards CSS
 
 .kysely .kysely-card .container-fluid{
   height: 100%;
+  padding: 0;
 }
 
 .kysely .kysely-card  .row-image{

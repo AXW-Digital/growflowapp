@@ -5,7 +5,7 @@ export default class FormCard extends Component {
         return (
             <div className="col-xl-4 col-md-6 my-3 kysely-col" data-aos="fade-up" data-aos-delay="200">
 
-                <div className="kysely-card blue">
+                <div className={`kysely-card ${this.props.kysely.color}`}>
                     <div className='container-fluid'>
                         <div className='row row-image'>
 

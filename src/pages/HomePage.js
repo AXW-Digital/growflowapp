@@ -9,19 +9,19 @@ var Name = 'John Doe'
 const mcdonalds_1 = {
     name: "McDonald's", picUrl: '/img/mcd.jfif', formTitle: 'McFeedback™',
     formText: 'Miten meillä meni? Anna palautetta viimeisimmästä ravintolakäynnistäsi ja auta meitä kehittämään toimintaamme.',
-    formUrl: '#'
+    formUrl: '#', color:'blue'
 }
 
 const hese_1 = {
     name: "Hesburger", picUrl: '/img/hese.jpg', formTitle: 'Kiitä, moiti, kysy tai ehdota',
     formText: 'Saitko Hesburgerissa erityisen mukavaa palvelua? Huomasitko jossain parantamisen varaa? Haluaisitko valikoimiimme uusia tuotteita? Kaikki palaute on meille arvokasta. ',
-    formUrl: '#'
+    formUrl: '#', color:'blue'
 }
 
 const burgerking_1 = {
     name: "Burger King", picUrl: '/img/burgerking.jpeg', formTitle: 'Oma BK-Kokemukseni',
     formText: 'Tervetuloa Minun BURGER KING® -kokemukseni -kyselyyn. Arvostamme rehellistä palautettasi ja sitä, että käytät aikaasi kyselyyn vastaamiseen.',
-    formUrl: '#'
+    formUrl: '#', color:'blue'
 }
 
 
