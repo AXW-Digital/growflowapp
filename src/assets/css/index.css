@@ -14,7 +14,8 @@
   --input-padding-x: 1.5rem;
   --input-padding-y: .75rem;
   --header-height: 72px;
-  --kysely-card-image-max-width: 200px; 
+  /* --kysely-card-image-max-width: 450px;
+  --kysely-card-image-max-height: 600px;  */
 }
 
 
@@ -1341,12 +1342,48 @@ input[type="checkbox"]:focus,
 Kysely Cards CSS
 -------------------------------------------------- */
 
+.kysely .card-container{
+  max-width: 1300px;
+}
+
 .kysely .btn-card{
   background-color:#363a59!important;
 }
 
+.kysely .kysely-card .row {
+  justify-content: center;
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+
+.kysely .kysely-card .container-fluid{
+  height: 100%;
+}
+
+.kysely .kysely-card  .row-image{
+height: 35%!important;
+overflow: hidden;
+}
+.kysely .kysely-card .row-text{
+  height: 35%!important;
+  overflow: hidden;
+}
+.kysely .kysely-card  .row-title{
+  height: 25%!important;
+  overflow: hidden;
+}
+.kysely .kysely-card  .row-button{
+  height: 5%!important;
+  overflow: visible;
+}
+
+.kysely .kysely-card .row .row-image .card-image{
+  object-fit: cover;
+}
+
 .kysely .kysely-card .card-text{
-  text-align: justify;
+  text-align: center;
 }
 
 .kysely .kysely-card {
@@ -1356,22 +1393,20 @@ Kysely Cards CSS
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
+  max-width: var(--kysely-card-image-max-width);
+  max-height: var(--kysely-card-image-max-height);
 }
 
-.kysely .kysely-card .card-image-container {
-  /* max-width: var(--kysely-card-image-max-width); */
-}
+
+
 
 .kysely .kysely-card img {
-  font-size: 36px;
-  padding: 30px 20px;
   border-radius: 4px;
-  position: relative;
-  display: inline-block;
-  line-height: 0;
   transition: 0.3s;
   width:100%;
-  /* max-width: var(--kysely-card-image-max-width); */
+  height:100%;
+  object-fit: cover;  
+  
 }
 
 
@@ -1382,20 +1417,6 @@ Kysely Cards CSS
   margin: 2rem 0 1rem 0 !important;
 }
 
-.kysely .kysely-card .read-more {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 8px 20px;
-}
-
-.kysely .kysely-card .read-more i {
-  line-height: 0;
-  margin-left: 5px;
-  font-size: 18px;
-}
 
 .kysely .kysely-card.blue {
   border-bottom: 3px solid #2db6fa;

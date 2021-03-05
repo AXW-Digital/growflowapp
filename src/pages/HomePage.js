@@ -13,13 +13,13 @@ const mcdonalds_1 = {
 }
 
 const hese_1 = {
-    name: "Hesburger", picUrl: '#', formTitle: 'KIITÄ, MOITI, KYSY TAI EHDOTA',
+    name: "Hesburger", picUrl: '/img/hese.jpg', formTitle: 'Kiitä, moiti, kysy tai ehdota',
     formText: 'Saitko Hesburgerissa erityisen mukavaa palvelua? Huomasitko jossain parantamisen varaa? Haluaisitko valikoimiimme uusia tuotteita? Kaikki palaute on meille arvokasta. ',
     formUrl: '#'
 }
 
 const burgerking_1 = {
-    name: "Burger King", picUrl: '#', formTitle: 'Oma BK-Kokemukseni',
+    name: "Burger King", picUrl: '/img/burgerking.jpeg', formTitle: 'Oma BK-Kokemukseni',
     formText: 'Tervetuloa Minun BURGER KING® -kokemukseni -kyselyyn. Arvostamme rehellistä palautettasi ja sitä, että käytät aikaasi kyselyyn vastaamiseen.',
     formUrl: '#'
 }
@@ -48,12 +48,12 @@ export default class HomePage extends Component {
                     </div>
                 </section>
                 <section id='kyselyt' className="d-flex align-items-center justify-content-center bg-light kysely">
-                    <div className="container" data-aos="fade-up">
+                    <div className="container card-container" data-aos="fade-up">
                         <header class="section-header">
                             <h2>Kyselyt</h2>
                             <p>Veritatis et dolores facere numquam et praesentium</p>
                         </header>
-                        <div class="row gy-4">
+                        <div class="row g-4 d-flex">
                         <FormCard kysely={mcdonalds_1} />
                         <FormCard kysely={hese_1} />
                         <FormCard kysely={burgerking_1} />
