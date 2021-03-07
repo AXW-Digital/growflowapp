@@ -11,7 +11,7 @@ class Vaikuttava extends React.Component {
     render() {
         return (
             <div>
-                <a id='page-top'></a>
+                <div id='page-top'></div>
                   <section id="hero" className="d-flex align-items-center">
                     <div className="container">
                         <div className="row">

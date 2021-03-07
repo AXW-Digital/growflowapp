@@ -29,7 +29,7 @@ export default class HomePage extends Component {
         return (
             <div>
                 <Header />
-                <a id='page-top'></a>
+                <div id='page-top'></div>
                 <section id="hero" className="d-flex align-items-center">
                     <div className="container">
                         <div className="row">
