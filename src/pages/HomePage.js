@@ -47,22 +47,22 @@ export default class HomePage extends Component {
                 </section>
                 <section id='kyselyt' className="d-flex align-items-center justify-content-center kysely">
                     <div className="container card-container" data-aos="fade-up">
-                        <header class="section-header">
+                        <header className="section-header">
                             <h3>Kyselyt</h3>
                             <p>Veritatis et dolores facere numquam et praesentium</p>
                         </header>
-                        <div class="row g-4 d-flex">
+                        <div className="row g-4 d-flex">
                             {cardvaluelist.filter(card => card.tyyppi === 'Vastaa').map(createCard)}
                         </div>
                     </div>
                 </section>
                 <section id='menutestaus' className="d-flex align-items-center bg-light justify-content-center kysely">
                     <div className="container card-container" data-aos="fade-up">
-                        <header class="section-header">
+                        <header className="section-header">
                             <h3>Menutestaukset</h3>
                             <p>Veritatis et dolores facere numquam et praesentium</p>
                         </header>
-                        <div class="row g-4 d-flex">
+                        <div className="row g-4 d-flex">
                         {cardvaluelist.filter(card => card.tyyppi === 'Osallistu').map(createCard)}
                         </div>
                     </div>

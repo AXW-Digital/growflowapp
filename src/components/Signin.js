@@ -10,7 +10,7 @@ class Signin extends Component {
                         <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
                             <div className="card card-signin my-5">
                                 <div className="card-body">
-                                    <div class="d-flex flex-row-reverse">
+                                    <div className="d-flex flex-row-reverse">
                                     <a 
                                     href="/">
                                     <i className="bx bx-exit bx-sm bx-sign"></i>
