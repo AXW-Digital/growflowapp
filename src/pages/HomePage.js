@@ -49,7 +49,7 @@ export default class HomePage extends Component {
                             <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-2">
                                 <h1>Tervetuloa {Name}!</h1>
                                 <p>Mitä tekstiä tälle sivulle kuuluu? Pystyisikö tähän koostamaan vastaajan aktiivisuutta tai nostamaan viime kyselyn vaikutuksia?</p>
-                                <div className='container counts'>
+                                <div className='counts'>
                                     <div className='row m-4'>
                                 {cardvaluelist.filter(card => card.tyyppi === 'Activity').map(createActivityCard)}
                                     </div>

@@ -84,6 +84,7 @@ const cardvaluelist = [
     },
 
     {
+        id: 1,
         boxIcon: 'bx bx-message-detail',
         count: 15,
         cardText: 'Vastatut kyselyt',
@@ -93,6 +94,7 @@ const cardvaluelist = [
     },
 
     {
+        id: 2,
         boxIcon: 'bx bx-coin-stack',
         count: 280.15,
         cardText: 'Kerrytetty bonus',
@@ -102,6 +104,7 @@ const cardvaluelist = [
     },
 
     {
+        id: 3,
         boxIcon: 'bx bx-been-here',
         count: 5,
         cardText: 'Menutestiä yhteensä',
