@@ -268,7 +268,8 @@ h3 {
 
 @media (max-width: 991px) {
   #hero {
-    height: calc(100vh - 72px);
+    min-height: calc(100vh - 72px);
+    height: 100%
   }
   #hero .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
