@@ -96,7 +96,7 @@ const cardvaluelist = [
     {
         id: 2,
         boxIcon: 'bx bx-coin-stack',
-        count: 280.15,
+        count: 72,
         cardText: 'Kerrytetty bonus',
         tyyppi: 'Activity',
         suffix : '€',
@@ -111,6 +111,16 @@ const cardvaluelist = [
         tyyppi: 'Activity',
         suffix : '',
         color: 'orange'
+    },
+
+    {
+        id: 4,
+        boxIcon: 'bx bx-diamond',
+        count: 32,
+        cardText: 'Arvonta kuponkia',
+        tyyppi: 'Activity',
+        suffix : '',
+        color: 'indigo'
     }
 
 ]
