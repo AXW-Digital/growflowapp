@@ -139,26 +139,7 @@ h3 {
     color:  #363a59;
   }
 
-  @media (max-width: 991px) {
-    #header {
-      background: #ffd000ea;
-    }
-    #header .mylinks{
-      font-weight: bold;
-      background-color: #e2b11194;;
-      color:  #363a59;
-    }
-  }
-  @media (max-width: 768px) {
-    #header {
-      background: #ffd000ea;
-    }
-    #header .mylinks{
-      font-weight: bold;
-      background-color: #e2b11194;;
-      color:  #363a59;
-    }
-  }
+  
   #responsive-navbar-nav{
     margin-top: 2ex;
     background-color: #f1eeddf5 !important;
