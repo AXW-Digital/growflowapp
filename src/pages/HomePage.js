@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from '../components/HeaderHome';
 import Footer from '../components/Footer'
 import FormCard from '../components/FormCard'
+import ActivityCard from '../components/ActivityCard'
 import { ReactComponent as Ideas } from '../assets/images/ideas.svg'
 import cardvaluelist from '../assets/js/cardvalues'
 var Name = 'John Doe'
@@ -23,6 +24,18 @@ function createCard(cardContent){
     )
 }
 
+function createActivityCard(Content){
+    return(
+        <ActivityCard
+        boxIcon = {Content.boxIcon}
+        count = {Content.count}
+        cardText = {Content.cardText}
+        suffix = {Content.suffix}
+        color = {Content.color}
+        />
+    )
+}
+
 
 export default class HomePage extends Component {
     render() {
@@ -36,6 +49,11 @@ export default class HomePage extends Component {
                             <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-2">
                                 <h1>Tervetuloa {Name}!</h1>
                                 <p>Mitä tekstiä tälle sivulle kuuluu? Pystyisikö tähän koostamaan vastaajan aktiivisuutta tai nostamaan viime kyselyn vaikutuksia?</p>
+                                <div className='container counts'>
+                                    <div className='row m-4'>
+                                {cardvaluelist.filter(card => card.tyyppi === 'Activity').map(createActivityCard)}
+                                    </div>
+                                </div>
                             </div>
                             <div className="col-lg-6 order-1 order-lg-1 hero-img">
                                 <div className="img-fluid animated">
