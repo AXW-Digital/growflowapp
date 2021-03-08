@@ -10,7 +10,7 @@ class Growflow extends Component {
                 <div className="container">
                 <div className="row">
                     <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1">
-                        <h2>GROWFLOW INSIGHTS</h2>
+                        <h3>GROWFLOW INSIGHTS</h3>
                         <p> Intohimomme on ymmärtää ihmisiä, asiakkaita, kuluttajia, käyttäytymistä, maailmaa. 
                             Yhdistämme asiakasymmärryksen ja teknologian.  Keräämme, analysoimme, yhdistämme ja 
                             rikastamme dataa yritysten käyttöön entistä parempien ja vaikuttavimpien tuotteiden 
@@ -23,7 +23,7 @@ class Growflow extends Component {
                             viinibaareja...
                         </p>
                         <div className="icon-box">
-                            <Card className="description shadow-lg p-3 mb-5 bg-white rounded">
+                            <Card className="description shadow-lg p-3 mb-5 bg-white rounded" data-aos="flip-up" data-aos-duration="200" data-aos-delay="300">
                             Kumppanimme ovat nautiskeluun erikoistuneita yrityksiä ja palveluntarjoajia
                             </Card>
                         </div>

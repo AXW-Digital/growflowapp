@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {ReactComponent as Messages} from './../assets/images/messages.svg'
 import { Card } from 'react-bootstrap'
 
 
-class Kukkavoi extends Component {
+class Kukkavoi extends React.Component {
     render() {
         return (
             <div>
-                  <section id="kukka" className="d-flex align-items-center">
+                  <section id="kukka" className="d-flex align-items-center jumptarget">
                     <div className="container">
                     <div className="row">
                         <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1">
@@ -17,7 +17,7 @@ class Kukkavoi extends Component {
                                 tuotteisiin ja palveluihin, ovat tervetulleita kasvuvaikuttajiin.
                             </p>
                             <div className="icon-box">
-                                <Card className="description shadow-lg p-3 mb-5 bg-white rounded">
+                                <Card className="description shadow-lg p-3 mb-5 bg-white rounded" data-aos="flip-up" data-aos-duration="200" data-aos-delay="300">
                                 Oletko kiinnostunut vaikuttamaan sinulle tarjottuihin palveluihin ja tuotteisiin? 
                                 Tervetuloa joukkoomme!
                                 </Card>
