@@ -81,7 +81,48 @@ const cardvaluelist = [
         formUrl: '#', 
         color: 'blue',
         tyyppi: 'Osallistu'
+    },
+
+    {
+        id: '1',
+        boxIcon: 'bx bx-message-detail',
+        count: 15,
+        cardText: 'Vastatut kyselyt',
+        tyyppi: 'Activity',
+        suffix: '',
+        color: 'blue'
+    },
+
+    {
+        id: '2',
+        boxIcon: 'bx bx-coin-stack',
+        count: 72,
+        cardText: 'Kerrytetty bonus',
+        tyyppi: 'Activity',
+        suffix : '€',
+        color: 'green'
+    },
+
+    {
+        id: '3',
+        boxIcon: 'bx bx-been-here',
+        count: 5,
+        cardText: 'Menutestiä yhteensä',
+        tyyppi: 'Activity',
+        suffix : '',
+        color: 'orange'
+    },
+
+    {
+        id: '5',
+        boxIcon: 'bx bx-diamond',
+        count: 32,
+        cardText: 'Arvonta kuponkia',
+        tyyppi: 'Activity',
+        suffix : '',
+        color: 'indigo'
     }
+
 ]
 
 
