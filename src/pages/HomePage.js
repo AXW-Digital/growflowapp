@@ -1,41 +1,13 @@
 import React, { Component } from 'react'
 import Header from '../components/HeaderHome';
 import Footer from '../components/Footer'
-import FormCard from '../components/FormCard'
-import ActivityCard from '../components/ActivityCard'
 import { ReactComponent as Ideas } from '../assets/images/ideas.svg'
 import cardvaluelist from '../assets/js/cardvalues'
+import {createCard} from '../components/CardFunctions'
+import {createActivityCard} from '../components/CardFunctions'
+
 var Name = 'John Doe'
 
-// Function that creates the card content for the mapping function
-function createCard(cardContent){
-    return (
-        <FormCard
-        key = {cardContent.id}
-        name = {cardContent.name}
-        picUrl = {cardContent.picUrl}
-        formTitle = {cardContent.formTitle}
-        formText = {cardContent.formText}
-        formUrl = {cardContent.formUrl}
-        color = {cardContent.color}
-        minutes = {cardContent.minutes}
-        tyyppi = {cardContent.tyyppi}
-        />
-    )
-}
-
-function createActivityCard(Content){
-    return(
-        <ActivityCard
-        key = {Content.id}
-        boxIcon = {Content.boxIcon}
-        count = {Content.count}
-        cardText = {Content.cardText}
-        suffix = {Content.suffix}
-        color = {Content.color}
-        />
-    )
-}
 
 
 export default class HomePage extends Component {

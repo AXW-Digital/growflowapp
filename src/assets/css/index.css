@@ -1,8 +1,10 @@
-@font-face {font-family: "TT Norms";
+@font-face {
+  font-family: "TT Norms";
   src: url('./../fonts/TTNorms-Medium.otf') format('opentype');
 }
 
-@font-face {font-family: 'TT Norms Light';
+@font-face {
+  font-family: 'TT Norms Light';
   src: url('./../fonts/TTNorms-Light.otf') format('opentype')
 }
 
@@ -15,7 +17,8 @@
 # General
 --------------------------------------------------------------*/
 html {
-  scroll-padding-top: var(--header-height); /* height of sticky header */
+  scroll-padding-top: var(--header-height);
+  /* height of sticky header */
   --header-height: 72px;
   --input-padding-x: 1.5rem;
   --input-padding-y: .75rem;
@@ -25,7 +28,11 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5 .font-primary {
+h1,
+h2,
+h3,
+h4,
+h5 .font-primary {
   font-family: "TT Norms";
 }
 
@@ -44,12 +51,16 @@ h3 .font-primary {
 h4 .font-primary {
   font-size: 28px;
 }
-p, .hyodyt .font-primary {
+
+p,
+.hyodyt .font-primary {
   font-family: "TT Norms Light";
 }
+
 p .font-primary {
   font-size: 20px;
 }
+
 section {
   padding: 60px 0;
   min-height: calc(100vh - var(--header-height));
@@ -64,7 +75,7 @@ h3 {
 }
 
 
-#page-top{
+#page-top {
   position: absolute;
   top: 0;
 
@@ -85,8 +96,8 @@ h3 {
   bottom: 15px;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
-  background: #e2b11194!important;
-  color: white!important;
+  background: #e2b11194 !important;
+  color: white !important;
 }
 
 .back-to-top i {
@@ -115,33 +126,37 @@ h3 {
   font-weight: bold;
   font-family: 'TT Norms' !important;
 }
+
 #header .logo {
   color: #363a59 !important;
   font-weight: bold;
   margin-left: 2ex;
 }
 
-#header .mylinks{
+#header .mylinks {
   font-weight: bold;
-  color:  #363a59a4;
+  color: #363a59a4;
 }
 
 
 #main {
   margin-top: 72px;
 }
+
 @media (max-width: 575px) {
   #header {
     background: #ffd000ea;
   }
-  #header .mylinks{
+
+  #header .mylinks {
     font-weight: bold;
-    background-color: #e2b11194;;
-    color:  #363a59;
+    background-color: #e2b11194;
+    ;
+    color: #363a59;
   }
 
-  
-  #responsive-navbar-nav{
+
+  #responsive-navbar-nav {
     margin-top: 2ex;
     background-color: #f1eeddf5 !important;
   }
@@ -152,7 +167,7 @@ h3 {
 # Navigation Menu
 --------------------------------------------------------------*/
 
-.navbar-toggler{
+.navbar-toggler {
   margin-right: 2ex;
 }
 
@@ -166,7 +181,7 @@ h3 {
 #hero {
   width: 100%;
   height: 70vh;
-  background:white;
+  background: white;
   border-bottom: 2px solid #fcebe3;
   margin: 10rem 0 -72px 0;
 }
@@ -181,11 +196,12 @@ h3 {
 }
 
 #hero h2 {
-  
+
   color: #0f0f0f;
   margin-bottom: 50px;
   font-size: 22px;
 }
+
 #hero p {
   color: #0f0f0f;
   margin-bottom: 50px;
@@ -207,6 +223,7 @@ h3 {
   background: #edbf07;
   text-decoration: none;
 }
+
 #hero .btn-get-rekister {
   font-family: "TT Norms";
   /* font-weight: 500; */
@@ -224,12 +241,12 @@ h3 {
 }
 
 #hero .btn-get-started:hover {
-  background:#fff;
+  background: #fff;
   color: #0f0f0f;
 }
 
 #hero .btn-get-rekister:hover {
-  background:#edbf07;
+  background: #edbf07;
   color: #0f0f0f;
 }
 
@@ -241,9 +258,11 @@ h3 {
   #hero {
     background-attachment: fixed;
   }
+
   #hero .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #hero .container {
     margin-bottom: 10rem;
     text-align: center;
@@ -255,15 +274,19 @@ h3 {
     min-height: calc(100vh - 72px);
     height: 100%
   }
+
   #hero .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #hero .hero-img {
     text-align: center;
   }
+
   #hero .hero-img img {
     width: 50%;
   }
+
   #hero .container {
     margin-bottom: 10rem;
     text-align: center;
@@ -275,18 +298,22 @@ h3 {
     font-size: 28px;
     line-height: 36px;
   }
+
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
+
   #hero .hero-img img {
     width: 70%;
   }
+
   #hero .animated {
     -webkit-animation: none;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #hero .container {
     margin-bottom: 10rem;
     text-align: center;
@@ -297,24 +324,28 @@ h3 {
   #hero .hero-img img {
     width: 80%;
   }
+
   #hero .container {
     margin-bottom: 10rem;
     text-align: center;
   }
+
   #hero .animated {
     -webkit-animation: none;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #hero .btn-get-started {
     display: inline-block;
   }
+
   #hero .btn-get-rekister {
     display: inline-block;
   }
-  
+
 }
 
-#hero > div > div > div.col-lg-6.pt-5.pt-lg-0.order-2.order-lg-2 > p {
+#hero>div>div>div.col-lg-6.pt-5.pt-lg-0.order-2.order-lg-2>p {
   margin-bottom: 20px;
 }
 
@@ -322,6 +353,7 @@ h3 {
   0% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(-10px);
   }
@@ -331,6 +363,7 @@ h3 {
   0% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(-10px);
   }
@@ -342,7 +375,7 @@ kasvuvaikuttajan section
 ---------------------------------------------------------------*/
 
 #kasvut {
-  background:white;
+  background: white;
   margin-bottom: 100%;
   width: 100%;
   max-height: 100%;
@@ -350,24 +383,25 @@ kasvuvaikuttajan section
   margin: 72px 0 -72px 0;
   height: 100%;
 }
+
 #kasvut .icon-box {
   margin-top: 40px;
 }
 
-#kasvut .description{
+#kasvut .description {
   font-family: "TT Norms Light";
   font-size: 20px;
-  color: rgba(63,61,86,1);
+  color: rgba(63, 61, 86, 1);
   border-left-width: 1.5ex !important;
   border-left-color: #ffcf00 !important;
-  color: rgba(63,61,86,1) !important;
+  color: rgba(63, 61, 86, 1) !important;
 }
 
 
 #kasvut h3 {
   margin: 0 0 10px 0;
   font-weight: bold;
-  color: rgba(63,61,86,1);
+  color: rgba(63, 61, 86, 1);
 }
 
 #kasvut h2 {
@@ -377,12 +411,14 @@ kasvuvaikuttajan section
   line-height: 56px;
   color: #0f0f0f;
 }
+
 #kasvut p {
   color: #0f0f0f;
   font-size: 20px;
-  color: rgba(63,61,86,1)
+  color: rgba(63, 61, 86, 1)
 }
-#kasvut .container{
+
+#kasvut .container {
   margin-bottom: 5rem;
 }
 
@@ -394,30 +430,36 @@ kasvuvaikuttajan section
   #kasvut {
     background-attachment: fixed;
   }
+
   #kasvut .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #kasvut {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
     height: 100%;
   }
-  
+
 }
 
 @media (max-width: 991px) {
   #kasvut {
     height: calc(100vh - 72px);
   }
+
   #kasvut .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #kasvut .kasvut-img {
     text-align: center;
   }
+
   #kasvut .kasvut-img img {
     width: 50%;
   }
+
   #kasvut {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
@@ -430,18 +472,22 @@ kasvuvaikuttajan section
     font-size: 28px;
     line-height: 36px;
   }
+
   #kasvut h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
+
   #kasvut .kasvut-img img {
     width: 70%;
   }
+
   #kasvut .animated {
     -webkit-animation: none;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #kasvut {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
@@ -454,22 +500,26 @@ kasvuvaikuttajan section
     max-width: 100%;
     max-width: 100%;
   }
+
   #kasvut .kasvut-img img {
     width: 80%;
     margin-top: -50rem !important;
   }
+
   #kasvut .animated {
     -webkit-animation: none;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
-  #kasvut .description{
+
+  #kasvut .description {
     font-family: "TT Norms Light";
     font-size: 18px;
-    color: rgba(63,61,86,1);
+    color: rgba(63, 61, 86, 1);
     border-left-width: 1.5ex !important;
     border-left-color: #ffcf00 !important;
-    color: rgba(63,61,86,1) !important;
+    color: rgba(63, 61, 86, 1) !important;
   }
+
   #kasvut {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
@@ -482,6 +532,7 @@ kasvuvaikuttajan section
   0% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(-10px);
   }
@@ -491,10 +542,12 @@ kasvuvaikuttajan section
   0% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(-10px);
   }
 }
+
 /*--------------------------------------------------------------
 kasvuvaikkuttaja ends
 ---------------------------------------------------------------*/
@@ -504,7 +557,7 @@ kukka begins
 ---------------------------------------------------------------*/
 
 #kukka {
-  background:whitesmoke;
+  background: whitesmoke;
   margin-bottom: 100%;
   width: 100%;
   max-height: 100%;
@@ -512,31 +565,33 @@ kukka begins
   margin: 72px 0 -72px 0;
   height: 100%;
 }
+
 #kukka .icon-box {
   margin-top: 40px;
 }
 
-#kukka .description{
+#kukka .description {
   font-family: "TT Norms Light";
   font-size: 20px;
-  color: rgba(63,61,86,1);
+  color: rgba(63, 61, 86, 1);
   border-left-width: 1.5ex !important;
   border-left-color: #ffcf00 !important;
-  color: rgba(63,61,86,1) !important;
+  color: rgba(63, 61, 86, 1) !important;
 }
 
-#kukka .hyodyt{
-  
+#kukka .hyodyt {
+
   font-size: 20px;
-  color: rgba(63,61,86,1);
+  color: rgba(63, 61, 86, 1);
   border-left-width: 1.5ex !important;
   border-left-color: #ffcf00 !important;
-  color: rgba(63,61,86,1) !important;
+  color: rgba(63, 61, 86, 1) !important;
 }
+
 #kukka h3 {
   margin: 0 0 10px 0;
   font-weight: bold;
-  color: rgba(63,61,86,1);
+  color: rgba(63, 61, 86, 1);
 }
 
 #kukka h2 {
@@ -546,12 +601,14 @@ kukka begins
   line-height: 56px;
   color: #0f0f0f;
 }
+
 #kukka p {
   font-size: 20px;
   color: #0f0f0f;
-  color: rgba(63,61,86,1)
+  color: rgba(63, 61, 86, 1)
 }
-#kukka .container{
+
+#kukka .container {
   margin-bottom: 5rem;
 }
 
@@ -563,30 +620,36 @@ kukka begins
   #kukka {
     background-attachment: fixed;
   }
+
   #kukka .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #kukka {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
     height: 100%;
   }
-  
+
 }
 
 @media (max-width: 991px) {
   #kukka {
     height: calc(100vh - 72px);
   }
+
   #kukka .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #kukka .kukka-img {
     text-align: center;
   }
+
   #kukka .kukka-img img {
     width: 50%;
   }
+
   #kukka {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
@@ -599,18 +662,22 @@ kukka begins
     font-size: 28px;
     line-height: 36px;
   }
+
   #kukka h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
+
   #kukka .kukka-img img {
     width: 70%;
   }
+
   #kukka .animated {
     -webkit-animation: none;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #kukka {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
@@ -623,30 +690,35 @@ kukka begins
     max-width: 100%;
     max-width: 100%;
   }
+
   #kukka .kukka-img img {
     width: 80%;
     margin-top: -50rem !important;
   }
+
   #kukka .animated {
     -webkit-animation: none;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
-  #kukka .description{
+
+  #kukka .description {
     font-family: "TT Norms Light";
     font-size: 18px;
-    color: rgba(63,61,86,1);
+    color: rgba(63, 61, 86, 1);
     border-left-width: 1.5ex !important;
     border-left-color: #ffcf00 !important;
-    color: rgba(63,61,86,1) !important;
+    color: rgba(63, 61, 86, 1) !important;
   }
+
   #kukka {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
     height: 100%;
   }
-  #kukka .hyodyt{
+
+  #kukka .hyodyt {
     font-size: 18px;
-    color: rgba(63,61,86,1);
+    color: rgba(63, 61, 86, 1);
   }
 }
 
@@ -654,6 +726,7 @@ kukka begins
   0% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(-10px);
   }
@@ -663,6 +736,7 @@ kukka begins
   0% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(-10px);
   }
@@ -677,7 +751,7 @@ growflow begins
 ---------------------------------------------------------------*/
 
 #growflow {
-  background:whitesmoke;
+  background: whitesmoke;
   margin-bottom: 100%;
   width: 100%;
   max-height: 100%;
@@ -685,24 +759,25 @@ growflow begins
   margin: 72px 0 -72px 0;
   height: 100%;
 }
+
 #growflow .icon-box {
   margin-top: 40px;
 }
 
-#growflow .description{
+#growflow .description {
   font-family: "TT Norms Light";
   font-size: 20px;
-  color: rgba(63,61,86,1);
+  color: rgba(63, 61, 86, 1);
   border-left-width: 1.5ex !important;
   border-left-color: #ffcf00 !important;
-  color: rgba(63,61,86,1) !important;
+  color: rgba(63, 61, 86, 1) !important;
 }
 
 
 #growflow h3 {
   margin: 0 0 10px 0;
   font-weight: bold;
-  color: rgba(63,61,86,1);
+  color: rgba(63, 61, 86, 1);
 }
 
 #growflow h2 {
@@ -712,12 +787,14 @@ growflow begins
   line-height: 56px;
   color: #0f0f0f;
 }
+
 #growflow p {
   color: #0f0f0f;
   font-size: 20px;
-  color: rgba(63,61,86,1)
+  color: rgba(63, 61, 86, 1)
 }
-#growflow .container{
+
+#growflow .container {
   margin-bottom: 5rem;
 }
 
@@ -729,30 +806,36 @@ growflow begins
   #growflow {
     background-attachment: fixed;
   }
+
   #growflow .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #growflow {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
     height: 100%;
   }
-  
+
 }
 
 @media (max-width: 991px) {
   #growflow {
     height: calc(100vh - 72px);
   }
+
   #growflow .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #growflow .growflow-img {
     text-align: center;
   }
+
   #growflow .growflow-img img {
     width: 50%;
   }
+
   #growflow {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
@@ -765,18 +848,22 @@ growflow begins
     font-size: 28px;
     line-height: 36px;
   }
+
   #growflow h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
+
   #growflow .growflow-img img {
     width: 70%;
   }
+
   #growflow .animated {
     -webkit-animation: none;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #growflow {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
@@ -788,22 +875,26 @@ growflow begins
   #growflow {
     max-width: 100%;
   }
+
   #growflow .growflow-img img {
     width: 80%;
     margin-top: -50rem !important;
   }
+
   #growflow .animated {
     -webkit-animation: none;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
-  #growflow .description{
+
+  #growflow .description {
     font-family: "TT Norms Light";
     font-size: 18px;
-    color: rgba(63,61,86,1);
+    color: rgba(63, 61, 86, 1);
     border-left-width: 1.5ex !important;
     border-left-color: #ffcf00 !important;
-    color: rgba(63,61,86,1) !important;
+    color: rgba(63, 61, 86, 1) !important;
   }
+
   #growflow {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
@@ -816,6 +907,7 @@ growflow begins
   0% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(-10px);
   }
@@ -825,6 +917,7 @@ growflow begins
   0% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(-10px);
   }
@@ -837,7 +930,7 @@ growflow ends
 voima begins
 ---------------------------------------------------------------*/
 #voima {
-  background:whitesmoke;
+  background: whitesmoke;
   margin-bottom: 100%;
   width: 100%;
   max-height: 100%;
@@ -845,24 +938,25 @@ voima begins
   margin: 72px 0 -72px 0;
   height: 100%;
 }
+
 #voima .icon-box {
   margin-top: 40px;
 }
 
-#voima .description{
+#voima .description {
   font-family: "TT Norms Light";
   font-size: 20px;
-  color: rgba(63,61,86,1);
+  color: rgba(63, 61, 86, 1);
   border-left-width: 1.5ex !important;
   border-left-color: #ffcf00 !important;
-  color: rgba(63,61,86,1) !important;
+  color: rgba(63, 61, 86, 1) !important;
 }
 
 
 #voima h3 {
   margin: 0 0 10px 0;
   font-weight: bold;
-  color: rgba(63,61,86,1);
+  color: rgba(63, 61, 86, 1);
 }
 
 #voima h2 {
@@ -871,12 +965,14 @@ voima begins
   line-height: 56px;
   color: #0f0f0f;
 }
+
 #voima p {
   color: #0f0f0f;
   font-size: 20px;
-  color: rgba(63,61,86,1)
+  color: rgba(63, 61, 86, 1)
 }
-#voima .container{
+
+#voima .container {
   margin-bottom: 5rem;
 }
 
@@ -888,30 +984,36 @@ voima begins
   #voima {
     background-attachment: fixed;
   }
+
   #voima .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #voima {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
     height: 100%;
   }
-  
+
 }
 
 @media (max-width: 991px) {
   #voima {
     height: calc(100vh - 72px);
   }
+
   #voima .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #voima .voima-img {
     text-align: center;
   }
+
   #voima .voima-img img {
     width: 50%;
   }
+
   #voima {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
@@ -923,17 +1025,21 @@ voima begins
   #voima h1 {
     line-height: 36px;
   }
+
   #voima h2 {
     line-height: 24px;
     margin-bottom: 30px;
   }
+
   #voima .voima-img img {
     width: 70%;
   }
+
   #voima .animated {
     -webkit-animation: none;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
+
   #voima {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
@@ -945,27 +1051,30 @@ voima begins
   #voima {
     max-width: 100%;
   }
+
   #voima .voima-img img {
     width: 80%;
     margin-top: -50rem !important;
   }
+
   #voima .animated {
     -webkit-animation: none;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
- 
+
   #voima {
     border-bottom: 2px solid #fcebe3;
     margin: 72px 0 -72px 0;
     height: 100%;
   }
-  #voima .description{
+
+  #voima .description {
     font-family: "TT Norms Light";
     font-size: 18px;
-    color: rgba(63,61,86,1);
+    color: rgba(63, 61, 86, 1);
     border-left-width: 1.5ex !important;
     border-left-color: #ffcf00 !important;
-    color: rgba(63,61,86,1) !important;
+    color: rgba(63, 61, 86, 1) !important;
   }
 
 }
@@ -974,6 +1083,7 @@ voima begins
   0% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(-10px);
   }
@@ -983,6 +1093,7 @@ voima begins
   0% {
     transform: translateY(10px);
   }
+
   100% {
     transform: translateY(-10px);
   }
@@ -1003,7 +1114,7 @@ voima ends
   font-size: 14px;
 }
 
-#footer h3{
+#footer h3 {
   margin-top: 0 !important;
 }
 
@@ -1025,7 +1136,7 @@ voima ends
 
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
-  
+
 }
 
 #footer .footer-top .footer-links ul {
@@ -1085,7 +1196,9 @@ voima ends
 
 
 @media (max-width: 575px) {
-  #footer .copyright, #footer .credits {
+
+  #footer .copyright,
+  #footer .credits {
     float: none;
     -moz-text-align-last: center;
     text-align-last: center;
@@ -1101,10 +1214,11 @@ voima ends
 Signin and Signup component css
 -------------------------------------------------- */
 
-.bx-sign{
+.bx-sign {
   color: rgb(90 87 123) !important
 }
-.sign-bg{
+
+.sign-bg {
   background: lightgrey;
 }
 
@@ -1113,7 +1227,7 @@ Signin and Signup component css
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   font-family: 'TT Norms Light';
-  color: rgba(63,61,86,1) !important;
+  color: rgba(63, 61, 86, 1) !important;
 
 }
 
@@ -1122,7 +1236,7 @@ Signin and Signup component css
   font-weight: 300;
   font-size: 1.5rem;
   font-family: 'TT Norms';
-  color:  rgb(90 87 123) !important
+  color: rgb(90 87 123) !important
 }
 
 
@@ -1241,26 +1355,26 @@ Signin and Signup component css
   border-radius: 50%;
 }
 
-.btn-login{
+.btn-login {
   background: #ffcf00 !important;
   font-family: 'TT Norms';
   font-weight: bold;
-  color: rgba(63,61,86,1) !important;
+  color: rgba(63, 61, 86, 1) !important;
 }
 
 .btn-some:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
-.btn-some::before{
-  position:relative;
+.btn-some::before {
+  position: relative;
   text-align: center;
   display: inline-block;
   margin-top: 0ex;
   margin-right: auto;
 }
 
-.alt-sign{
+.alt-sign {
   font-size: 2ex;
   text-align: center !important;
 }
@@ -1281,31 +1395,34 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 input[type="checkbox"]:focus,
-.uneditable-input:focus {   
+.uneditable-input:focus {
   border-color: #ffcf00;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #ffcf00;
   outline: 0 none;
 }
 
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #ffcf00!important;
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: #ffcf00 !important;
 }
 
-.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+.custom-checkbox .custom-control-input:checked:focus~.custom-control-label::before {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px #ffcf00;
 }
-.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px #ffcf00;
 }
-.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
-  background-color: #C8FFC8; 
+
+.custom-checkbox .custom-control-input:active~.custom-control-label::before {
+  background-color: #C8FFC8;
 }
 
 
 
-.link-primary{
+.link-primary {
   text-decoration: none !important;
 }
+
 /* Fallback for Edge
 -------------------------------------------------- */
 
@@ -1313,6 +1430,7 @@ input[type="checkbox"]:focus,
   .form-label-group>label {
     display: none;
   }
+
   .form-label-group input::-ms-input-placeholder {
     color: #777;
   }
@@ -1326,6 +1444,7 @@ input[type="checkbox"]:focus,
   .form-label-group>label {
     display: none;
   }
+
   .form-label-group input:-ms-input-placeholder {
     color: #777;
   }
@@ -1336,26 +1455,26 @@ input[type="checkbox"]:focus,
 /* -----------------------------------------------
 Kysely Cards CSS
 -------------------------------------------------- */
-#kyselyt{
-  background:rgb(243, 243, 246);
+#kyselyt {
+  background: rgb(243, 243, 246);
 }
 
 .kysely h3 {
   font-weight: bold;
-  color: rgba(63,61,86,1);
+  color: rgba(63, 61, 86, 1);
 }
 
-.kysely .kysely-card{
+.kysely .kysely-card {
   margin-bottom: 4ex;
   background-color: rgb(250, 250, 248);
 }
 
-.kysely .card-container{
+.kysely .card-container {
   max-width: 1300px;
 }
 
-.kysely .btn-card{
-  background-color:#363a59!important;
+.kysely .btn-card {
+  background-color: #363a59 !important;
   width: min(70%, 180px);
   font-size: 20px;
   font-weight: bold;
@@ -1369,33 +1488,36 @@ Kysely Cards CSS
 
 }
 
-.kysely .kysely-card .container-fluid{
+.kysely .kysely-card .container-fluid {
   height: 100%;
   padding: 0;
 }
 
-.kysely .kysely-card  .row-image{
-height: 35%!important;
-overflow: hidden;
-}
-.kysely .kysely-card .row-text{
-  height: 30%!important;
+.kysely .kysely-card .row-image {
+  height: 35% !important;
   overflow: hidden;
 }
-.kysely .kysely-card  .row-title{
-  height: 25%!important;
+
+.kysely .kysely-card .row-text {
+  height: 30% !important;
   overflow: hidden;
 }
-.kysely .kysely-card  .row-button{
-  height: 10%!important;
+
+.kysely .kysely-card .row-title {
+  height: 25% !important;
+  overflow: hidden;
+}
+
+.kysely .kysely-card .row-button {
+  height: 10% !important;
   overflow: visible;
 }
 
-.kysely .kysely-card .row .row-image .card-image{
+.kysely .kysely-card .row .row-image .card-image {
   object-fit: cover;
 }
 
-.kysely .kysely-card .card-text{
+.kysely .kysely-card .card-text {
   text-align: center;
 }
 
@@ -1416,10 +1538,10 @@ overflow: hidden;
 .kysely .kysely-card img {
   border-radius: 4px;
   transition: 0.3s;
-  width:100%;
-  height:100%;
-  object-fit: cover;  
-  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
 }
 
 
@@ -1534,7 +1656,9 @@ overflow: hidden;
   background: #f51f9c;
 }
 
-.kysely .kysely-card:hover h3, .kysely .kysely-card:hover p, .kysely .kysely-card:hover .read-more {
+.kysely .kysely-card:hover h3,
+.kysely .kysely-card:hover p,
+.kysely .kysely-card:hover .read-more {
   color: #fff;
 }
 
@@ -1578,7 +1702,7 @@ Activity Cards CSS
   margin: 0 !important;
   font-family: "TT Norms Light";
   font-size: 15px !important;
-  
+
 }
 
 
@@ -1592,13 +1716,16 @@ Profile Page CSS
   margin: var(--header-height) 0 0 0;
 }
 
+.counts-profile {
+  padding: 20px 0 20px;
+}
 
 .profile-card {
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   font-family: 'TT Norms Light';
-  color: rgba(63,61,86,1) !important;
+  color: rgba(63, 61, 86, 1) !important;
 
 }
 
@@ -1607,7 +1734,7 @@ Profile Page CSS
   font-weight: 300;
   font-size: 1.5rem;
   font-family: 'TT Norms';
-  color:  rgb(90 87 123) !important
+  color: rgb(90 87 123) !important
 }
 
 
@@ -1615,6 +1742,24 @@ Profile Page CSS
   padding: 2rem;
 }
 
-.profile-card .tab-pane{
-  margin:1rem 0 1rem 0;
+.profile-card .tab-pane {
+  margin: 1rem 0 1rem 0;
+}
+
+
+
+.profile-image img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 3px solid #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  object-fit: cover;  
+}
+
+.count-box-small{
+  display:flex !important;
 }
