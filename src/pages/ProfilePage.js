@@ -11,7 +11,7 @@ class ProfilePage extends Component {
                     <div className='container-fluid'>
                         <div className='row'>
                             <div className='col-4'>
-                                    <ProfileCard />
+                                    <ProfileCard cardTitle = 'Profiili' />
                             </div>
                         </div>
                     </div>

@@ -6,13 +6,7 @@ class ProfileCard extends Component {
             <div>
                  <div className="card card-signin my-5">
                                 <div className="card-body">
-                                    <div className="d-flex flex-row-reverse">
-                                    <a 
-                                    href="/">
-                                    <i className="bx bx-exit bx-sm bx-sign"></i>
-                                    </a>
-                                    </div>
-                                    <h5 className="card-title text-center">Kirjaudu</h5>
+                                    <h5 className="card-title text-center">{this.props.cardTitle}</h5>
                                     <form className="form-signin">
                                         <div className="form-label-group">
                                             <input type="email" id="inputEmail" className="form-control" placeholder="Email address" required autofocus />
