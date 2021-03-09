@@ -1,50 +1,54 @@
 import React, { Component } from 'react';
+import { Tabs, Tab } from 'react-bootstrap';
 
 class ProfileCard extends Component {
     render() {
         return (
             <div>
-                 <div className="card card-signin my-5">
-                                <div className="card-body">
-                                    <h5 className="card-title text-center">{this.props.cardTitle}</h5>
-                                    <form className="form-signin">
-                                        <div className="form-label-group">
-                                            <input type="email" id="inputEmail" className="form-control" placeholder="Email address" required autofocus />
-                                            <label for="inputEmail">Sähköposti</label>
-                                        </div>
+                <div className="card profile-card my-5">
+                    <div className="card-body">
+                        <h5 className="card-title text-center">{this.props.cardTitle}</h5>
 
-                                        <div className="form-label-group">
-                                            <input type="password" id="inputPassword" className="form-control" placeholder="Password" required />
-                                            <label for="inputPassword">Salasana</label>
-                                        </div>
+                            <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+                                <Tab eventKey="home" title="Käyttäjä">
+                                    <div class="tab-pane body active" id="about">
+                                        <small class="text-muted">Nimi </small>
+                                        <p>{this.props.forename} {this.props.surname}</p>
+                                        <hr />
+                                        <small class="text-muted">Sähköposti: </small>
+                                        <p>{this.props.emailAddress}</p>
+                                        <hr />
+                                        <small class="text-muted">Puhelin: </small>
+                                        <p>{this.props.phoneNumber}</p>
+                                        <hr />
+                                        <small class="text-muted">Syntymäaika: </small>
+                                        <p class="m-b-0">{this.props.birthDate}</p>
+                                    </div>
+                                </Tab>
+                                <Tab eventKey="profile" title="Tiedot">
+                                <div class="tab-pane body active" id="about">
+                                        <small class="text-muted">Rekisteröitynyt:  </small>
+                                        <p>{this.props.memberSince}</p>
+                                        <hr />
+                                        <small class="text-muted">Viimeksi kirjautunut: </small>
+                                        <p>{this.props.lastLogin}</p>
+                                        <hr />
+                                        <small class="text-muted">Kotipaikkakunta </small>
+                                        <p>{this.props.homeCity}</p>
+                                        <hr />
+                                        <small class="text-muted">Osoite</small>
+                                        <p class="m-b-0">{this.props.homeAddress}</p>
+                                    </div>
+                                </Tab>
+                                <Tab eventKey="contact" title="Contact" disabled>
+                                    Muuta
+                                </Tab>
+                            </Tabs>
 
-                                        <div className="custom-control custom-checkbox mb-3">
-                                            <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                                            <label className="custom-control-label" for="customCheck1">Muista minut</label>
-                                        </div>
-                                        <button className="btn btn-lg btn-block text-uppercase btn-login" type="submit">Kirjaudu</button>
-                                        <div className='row mt-4 mb-3'>
-                                            <div className="col"><hr /></div>
-                                            <div className='col align-items-center align-middle my-auto text-nowrap alt-sign text-center'>tai kirjaudu</div>
-                                            <div className="col"><hr /></div>
-                                        </div>
-                                        <div className='row justify-content-between ml-xl-4 mr-xl-4 ml-0 mr-0'>
-                                            <a href="/home"> <i className="fab fa-facebook-f btn-some align-items-center justify-content-center"/></a>
-                                            <a href="/home"> <i  className="fab fa-google btn-some align-items-center justify-content-center"/></a>
-                                            <a href="/home"> <i  className="fab fa-linkedin btn-some align-items-center justify-content-center"/></a>
-                                            <a href="/home"> <i  className="fab fa-twitter btn-some align-items-center justify-content-center"/></a>
-                                        </div>
-                                        <hr className='my-4' />
-                                        <div className='row mt-1'>
-                                            <div className='col text-center text-nowrap'>Ei käyttäjätunnusta?</div>
-                                            <div className='col text-center'>
-                                                <a href='/home' className='link-primary'>Rekisteröidy</a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                  
+
+                    </div>
+                </div>
+
             </div>
         );
     }

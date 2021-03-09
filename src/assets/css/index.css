@@ -1592,3 +1592,29 @@ Profile Page CSS
   margin: var(--header-height) 0 0 0;
 }
 
+
+.profile-card {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  font-family: 'TT Norms Light';
+  color: rgba(63,61,86,1) !important;
+
+}
+
+.profile-card .card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+  font-family: 'TT Norms';
+  color:  rgb(90 87 123) !important
+}
+
+
+.profile-card .card-body {
+  padding: 2rem;
+}
+
+.profile-card .tab-pane{
+  margin:1rem 0 1rem 0;
+}
