@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../assets/css/index.css'
 
 class Signin extends Component {
     render() {

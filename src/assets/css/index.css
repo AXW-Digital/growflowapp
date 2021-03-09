@@ -10,15 +10,6 @@
 # Global variables
 --------------------------------------------------------------*/
 
-:root {
-  --input-padding-x: 1.5rem;
-  --input-padding-y: .75rem;
-  --header-height: 72px;
-  /* --kysely-card-image-max-width: 450px;
-  --kysely-card-image-max-height: 600px;  */
-}
-
-
 
 
 
@@ -134,10 +125,6 @@ h3 {
   color:  #363a59a4;
 }
 
-#header .signlinks{
-  font-weight: bold;
-  color: #363a59;
-}
 
 #main {
   margin-top: 72px;
@@ -148,15 +135,11 @@ h3 {
   }
   #header .mylinks{
     font-weight: bold;
-    color:  #363a59a4;
-    text-indent: 1ex;
-  }
-  #header .signlinks{
-    font-weight: bold;
+    background-color: #e2b11194;;
     color:  #363a59;
-    text-indent: 1ex;
   }
 
+  
   #responsive-navbar-nav{
     margin-top: 2ex;
     background-color: #f1eeddf5 !important;
@@ -1147,6 +1130,11 @@ Signin and Signup component css
 }
 
 .form-signin {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+  --header-height: 72px;
+  /* --kysely-card-image-max-width: 450px;
+  --kysely-card-image-max-height: 600px;  */
   width: 100%;
 }
 

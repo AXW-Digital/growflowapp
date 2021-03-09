@@ -4,6 +4,11 @@ import ReactDOM from 'react-dom';
 
 // CSS
 import './assets/css/index.css';
+import 'aos/dist/aos.css'
+//bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css'
+
 
 // React Components
 import App from './App';
@@ -15,9 +20,6 @@ import ProfilePage from './pages/ProfilePage'
 // RouterDOM
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-//bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-css-only/css/bootstrap.min.css'
 
 // Font-awesome
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
