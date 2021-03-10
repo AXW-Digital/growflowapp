@@ -17,8 +17,8 @@ class ProfilePage extends Component {
                     <div className='container-fluid'>
                         <div className='row'>
                             
-                            <div className='counts counts-profile container-fluid'>
-                                <div className='row align-items-center'>
+                            <div className='container-fluid'>
+                                <div className='row align-items-center counts counts-profile '>
                                     <div className = 'col-xl-4'>
                                 <AvatarCard />
                                 </div>
@@ -26,8 +26,8 @@ class ProfilePage extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className='row'>
-                            <div className='col-lg-4'>
+                        <div className='row '>
+                            <div className='col-lg-4 '>
                                 <ProfileCard
                                     cardTitle='Profiili'
                                     birthDate='01.01.1990'
@@ -43,12 +43,12 @@ class ProfilePage extends Component {
                             </div>
                             <div className='col-lg-8'>
                                 <SettingsCard
-                                    Title='Asetukset'
-                                    BirthDate='01.01.1990'
-                                    Forename='John'
-                                    Surname='Doe'
-                                    EmailAddress='john.doe@email.com'
-                                    PhoneNumber='+358 40 123 4567'
+                                    cardTitle='Asetukset'
+                                    birthDate='01.01.1990'
+                                    forename='John'
+                                    surname='Doe'
+                                    emailAddress='john.doe@email.com'
+                                    phoneNumber='+358 40 123 4567'
                                 />
                             </div>
                         </div>

@@ -11,33 +11,33 @@ class ProfileCard extends Component {
 
                             <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
                                 <Tab eventKey="home" title="Käyttäjä">
-                                    <div class="tab-pane body active" id="about">
-                                        <small class="text-muted">Nimi </small>
+                                    <div className="tab-pane body active" id="about">
+                                        <small className="text-muted">Nimi </small>
                                         <p>{this.props.forename} {this.props.surname}</p>
                                         <hr />
-                                        <small class="text-muted">Sähköposti: </small>
+                                        <small className="text-muted">Sähköposti: </small>
                                         <p>{this.props.emailAddress}</p>
                                         <hr />
-                                        <small class="text-muted">Puhelin: </small>
+                                        <small className="text-muted">Puhelin: </small>
                                         <p>{this.props.phoneNumber}</p>
                                         <hr />
-                                        <small class="text-muted">Syntymäaika: </small>
-                                        <p class="m-b-0">{this.props.birthDate}</p>
+                                        <small className="text-muted">Syntymäaika: </small>
+                                        <p className="m-b-0">{this.props.birthDate}</p>
                                     </div>
                                 </Tab>
                                 <Tab eventKey="profile" title="Tiedot">
-                                <div class="tab-pane body active" id="about">
-                                        <small class="text-muted">Rekisteröitynyt:  </small>
+                                <div className="tab-pane body active" id="about">
+                                        <small className="text-muted">Rekisteröitynyt:  </small>
                                         <p>{this.props.memberSince}</p>
                                         <hr />
-                                        <small class="text-muted">Viimeksi kirjautunut: </small>
+                                        <small className="text-muted">Viimeksi kirjautunut: </small>
                                         <p>{this.props.lastLogin}</p>
                                         <hr />
-                                        <small class="text-muted">Kotipaikkakunta </small>
+                                        <small className="text-muted">Kotipaikkakunta </small>
                                         <p>{this.props.homeCity}</p>
                                         <hr />
-                                        <small class="text-muted">Osoite</small>
-                                        <p class="m-b-0">{this.props.homeAddress}</p>
+                                        <small className="text-muted">Osoite</small>
+                                        <p className="m-b-0">{this.props.homeAddress}</p>
                                     </div>
                                 </Tab>
                                 <Tab eventKey="contact" title="Contact" disabled>

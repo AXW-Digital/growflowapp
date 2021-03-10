@@ -1760,6 +1760,55 @@ Profile Page CSS
   object-fit: cover;  
 }
 
-.count-box-small{
-  display:flex !important;
+.count-box-small {
+
+  padding: 20px 30px 20px 30px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.count-box-small i {
+  font-size: 42px;
+  line-height: 0;
+  margin-right: 20px;
+}
+
+.count-box-small span {
+  font-size: 36px;
+  /* display: flex; */
+  font-weight: 600;
+}
+
+.count-box-small p {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: "TT Norms Light";
+  font-size: 15px !important;
+
+}
+
+.setting-col hr{
+  margin: 3px 0 30px 0
+}
+
+.setting-col-n hr{
+  margin: 3px 0 20px 0
+}
+
+.setting-col-n{
+  margin: 10px 0 10px 0 !important
+}
+
+.btn-update-settings {
+  background: #ffcf00 !important;
+  font-family: 'TT Norms';
+  font-weight: bold;
+  color: rgba(63, 61, 86, 1) !important;
+  border-radius: 30px !important;
 }
