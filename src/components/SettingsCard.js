@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
-import {SliderDist, SliderPrice} from './RangeSlider'
+import { SliderDist, SliderPrice } from './RangeSlider'
 
 class SettingsCard extends Component {
     render() {
@@ -28,17 +28,26 @@ class SettingsCard extends Component {
                                             <small className="text-muted"> Sähköposti-ilmoitukset </small>
                                             <hr />
                                         </div>
-                                        <div className = 'col-6'>
-                                        <div className="custom-control custom-checkbox mb-3">
-                                            <input type="checkbox" className="custom-control-input" id="checkMail" />
-                                            <label className="custom-control-label" for="checkMail">Menutestit</label>
+                                        <div className='col-4'>
+                                            <div className="custom-control custom-checkbox mb-3">
+                                                <input type="checkbox" className="custom-control-input" id="checkMail" />
+                                                <label className="custom-control-label" for="checkMail">Menutestit</label>
+                                            </div>
                                         </div>
+                                        <div className='col-4'>
+                                            <div className="custom-control custom-checkbox mb-3">
+                                                <input type="checkbox" className="custom-control-input" id="checkMailKysely" />
+                                                <label className="custom-control-label" for="checkMailKysely">Kyselyt</label>
+                                            </div>
                                         </div>
-                                        <div className = 'col-6'>
-                                        <div className="custom-control custom-checkbox mb-3">
-                                            <input type="checkbox" className="custom-control-input" id="checkMailKysely" />
-                                            <label className="custom-control-label" for="checkMailKysely">Kyselyt</label>
+                                        <div className='col-4'>
+                                            <div className="custom-control custom-checkbox mb-3">
+                                                <input type="checkbox" className="custom-control-input" id="checkMailKysely" />
+                                                <label className="custom-control-label" for="checkMailKysely">Newsletter</label>
+                                            </div>
                                         </div>
+                                        <div className='col-12 setting-col-n'>
+                                            <hr />
                                         </div>
                                         <div className='col-md-3'>
                                             <a href="/signin" class="btn btn-lg btn-block text-uppercase btn-update-settings">Päivitä</a>
