@@ -22,7 +22,7 @@ export default ActivityCard;
 class ActivityCardSmall extends Component {
     render() {
         return (
-            <div className={'col-xl-2 col-lg-6 align-self-stretch justify-content-between d-flex clearfix'}>
+            <div className={'col-xl-2 col-lg-6 align-self-stretch justify-content-between d-flex clearfix mt-2 mt-lg-0'}>
                 <div className="count-box-small d-flex align-items-center justify-content-center" style={{ color: `${this.props.color}` }}>
                     <i className={`${this.props.boxIcon}`}></i>
                     <div>

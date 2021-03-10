@@ -28,22 +28,22 @@ class SettingsCard extends Component {
                                             <small className="text-muted"> Sähköposti-ilmoitukset </small>
                                             <hr />
                                         </div>
-                                        <div className='col-4'>
+                                        <div className='col-md-4'>
                                             <div className="custom-control custom-checkbox mb-3">
                                                 <input type="checkbox" className="custom-control-input" id="checkMail" />
                                                 <label className="custom-control-label" for="checkMail">Menutestit</label>
                                             </div>
                                         </div>
-                                        <div className='col-4'>
+                                        <div className='col-md-4'>
                                             <div className="custom-control custom-checkbox mb-3">
                                                 <input type="checkbox" className="custom-control-input" id="checkMailKysely" />
                                                 <label className="custom-control-label" for="checkMailKysely">Kyselyt</label>
                                             </div>
                                         </div>
-                                        <div className='col-4'>
+                                        <div className='col-md-4'>
                                             <div className="custom-control custom-checkbox mb-3">
-                                                <input type="checkbox" className="custom-control-input" id="checkMailKysely" />
-                                                <label className="custom-control-label" for="checkMailKysely">Newsletter</label>
+                                                <input type="checkbox" className="custom-control-input" id="checkMailNews" />
+                                                <label className="custom-control-label" for="checkMailNews">Newsletter</label>
                                             </div>
                                         </div>
                                         <div className='col-12 setting-col-n'>
