@@ -2,7 +2,7 @@ import React from 'react'
 import RangeSlider from 'react-bootstrap-range-slider';
 import { Form, Col, Row } from 'react-bootstrap'
 
-const SliderWithLabel = () => {
+const SliderDist = () => {
 
     const [value, setValue] = React.useState(50);
 
@@ -10,27 +10,65 @@ const SliderWithLabel = () => {
         <Form>
             <Form.Label>
                 <p>
-                    Menutestien maksimietäisyys
+                    Maksimietäisyys
                 </p>
             </Form.Label>
             <Form.Group as={Row}>
-                <Col xs="9">
+                <Col xs="7" md='10'>
                     <RangeSlider
                         value={value}
                         onChange={e => setValue(e.target.value)}
                         step={10}
                         min={20}
                         max={300}
+                        variant = 'warning'
+                        tooltipPlacement='bottom'
+                        tooltip='auto'
                     />
                 </Col>
-                <Col xs="3">
-                    <Form.Control value={value} />
+                <Col xs="5" md='2'>
+                    <Form.Control value={value + ` km`} className='range-dist' />
                 </Col>
             </Form.Group>
         </Form>
     );
 };
 
-export default SliderWithLabel
+export {SliderDist}
 
+
+const SliderPrice = () => {
+
+    const [value, setValue] = React.useState(15);
+
+    return (
+        <Form>
+            <Form.Label>
+                <p>
+                    
+                    Annosten maksimihinta 
+                </p>
+            </Form.Label>
+            <Form.Group as={Row}>
+                <Col xs="7" md='10'>
+                    <RangeSlider
+                        value={value}
+                        onChange={e => setValue(e.target.value)}
+                        step={2.5}
+                        min={5}
+                        max={50}
+                        variant = 'warning'
+                        tooltipPlacement='bottom'
+                        tooltip='auto'
+                    />
+                </Col>
+                <Col xs="5" md='2'>
+                    <Form.Control value={value + ` €`} className='range-dist' />
+                </Col>
+            </Form.Group>
+        </Form>
+    );
+};
+
+export {SliderPrice}
 
