@@ -10,7 +10,7 @@ class SettingsCard extends Component {
                     <div className="card-body">
                         <h5 className="card-title text-center">{this.props.cardTitle}</h5>
 
-                        <Tabs defaultActiveKey="home" id="settings-tabs" variant='pills'>
+                        <Tabs defaultActiveKey="home" id="settings-tabs" variant='pills' className='blue'>
                             <Tab eventKey="home" title="Profiili">
                                 <div className="tab-pane body active" id="profile-tab">
                                     <div className='row clearfix'>

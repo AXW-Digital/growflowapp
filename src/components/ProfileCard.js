@@ -8,7 +8,6 @@ class ProfileCard extends Component {
                 <div className="card profile-card my-5">
                     <div className="card-body">
                         <h5 className="card-title text-center">{this.props.cardTitle}</h5>
-
                             <Tabs defaultActiveKey="home" id="profile-tabs" variant='pills'>
                                 <Tab eventKey="home" title="Käyttäjä">
                                     <div className="tab-pane body active" id="about">
@@ -40,15 +39,9 @@ class ProfileCard extends Component {
                                         <p className="m-b-0">{this.props.homeAddress}</p>
                                     </div>
                                 </Tab>
-                                <Tab eventKey="contact" title="Contact" disabled>
-                                    Muuta
-                                </Tab>
                             </Tabs>
-
-
                     </div>
                 </div>
-
             </div>
         );
     }

@@ -1817,3 +1817,14 @@ Profile Page CSS
   border-radius: 30px !important;
 }
 
+.nav-pills > a{
+  color: #363a59 !important;
+  font-weight: bold;
+}
+
+.nav-pills >  a.active {
+  background-color:#ffcf00 !important;
+  color: #363a59 !important;
+}
+
+
