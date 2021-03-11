@@ -1812,3 +1812,8 @@ Profile Page CSS
   color: rgba(63, 61, 86, 1) !important;
   border-radius: 30px !important;
 }
+
+.btn-danger{
+  border-radius: 30px !important;
+}
+

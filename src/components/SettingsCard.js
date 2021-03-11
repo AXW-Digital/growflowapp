@@ -10,7 +10,7 @@ class SettingsCard extends Component {
                     <div className="card-body">
                         <h5 className="card-title text-center">{this.props.cardTitle}</h5>
 
-                        <Tabs defaultActiveKey="home" id="uncontrolled-tab-example">
+                        <Tabs defaultActiveKey="home" id="settings-tabs" variant='pills'>
                             <Tab eventKey="home" title="Profiili">
                                 <div className="tab-pane body active" id="profile-tab">
                                     <div className='row clearfix'>
@@ -49,7 +49,7 @@ class SettingsCard extends Component {
                                         <div className='col-12 setting-col-n'>
                                             <hr />
                                         </div>
-                                        <div className='col-md-3'>
+                                        <div className='col-md-3 ml-auto'>
                                             <a href="/signin" class="btn btn-lg btn-block text-uppercase btn-update-settings">Päivitä</a>
                                         </div>
 
@@ -109,7 +109,7 @@ class SettingsCard extends Component {
                                                 <label htmlFor="inputCity">Paikkakunta</label>
                                             </div>
                                         </div>
-                                        <div className='col-md-3'>
+                                        <div className='col-md-3 ml-auto mt-3'>
                                             <a href="/signin" class="btn btn-lg btn-block text-uppercase btn-update-settings">Päivitä</a>
                                         </div>
 
@@ -141,9 +141,25 @@ class SettingsCard extends Component {
                                                 <label for="inputPassword">Salasana uudelleen</label>
                                             </div>
                                         </div>
-                                        <div className='col-md-3'>
+                                        <div className='col-md-3 mb-3 ml-auto mt-3'>
                                             <a href="/signin" class="btn btn-lg btn-block text-uppercase btn-update-settings">Päivitä</a>
                                         </div>
+                                        <div className='col-12 setting-col'>
+                                            <small className="text-muted ">Käyttäjähallinta: </small>
+                                            <hr />
+                                        </div>
+                                        <div className='col-md-9'>
+                                            <div className="form-label-group">
+                                                <div className='font-weight-bold'>
+                                                    Poista käyttäjä
+                                                </div>
+                                                Jos poistat käyttäjän, et voi enää palata ja menetät kaikki kertyneet kupongit ja bonukset
+                                            </div>
+                                        </div>
+                                        <div className = 'col-md-3 ml-auto'>
+                                        <a href="/signin" class="btn btn-lg btn-block text-uppercase btn-danger">Poista</a>
+                                        </div>
+
 
                                     </div>
                                 </div>

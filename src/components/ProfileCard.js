@@ -9,7 +9,7 @@ class ProfileCard extends Component {
                     <div className="card-body">
                         <h5 className="card-title text-center">{this.props.cardTitle}</h5>
 
-                            <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+                            <Tabs defaultActiveKey="home" id="profile-tabs" variant='pills'>
                                 <Tab eventKey="home" title="Käyttäjä">
                                     <div className="tab-pane body active" id="about">
                                         <small className="text-muted">Nimi </small>
