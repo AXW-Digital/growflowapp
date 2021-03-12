@@ -6,7 +6,7 @@ const cardvaluelist = [
         picUrl: '/img/mcd.jfif',
         formTitle: 'McFeedback™',
         formText: 'Miten meillä meni? Anna palautetta viimeisimmästä ravintolakäynnistäsi ja auta meitä kehittämään toimintaamme.',
-        formUrl: '#',
+        formUrl: '/feedback1',
         color: 'blue',
         minutes: '(3 min)',
         tyyppi: 'Vastaa'

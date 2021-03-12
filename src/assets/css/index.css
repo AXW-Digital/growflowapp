@@ -1828,3 +1828,12 @@ Profile Page CSS
 }
 
 
+/* -----------------------------------------------
+Kysely Page CSS
+-------------------------------------------------- */
+
+#kysely{
+  padding: 60px 0;
+  min-height: calc(100vh - var(--header-height));
+  margin: var(--header-height) 0 0 0; 
+}

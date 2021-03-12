@@ -16,7 +16,8 @@ import App from './App';
 import Signin from './components/Signin';
 import Signup from './components/Signup';
 import HomePage from './pages/HomePage';
-import ProfilePage from './pages/ProfilePage'
+import ProfilePage from './pages/ProfilePage';
+import KyselyPage from './pages/KyselyPage'
 
 // RouterDOM
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -38,6 +39,7 @@ const Root = () => (
                     <Route component={Signup} path="/signup" />
                     <Route component={HomePage} path = "/home" />
                     <Route component={ProfilePage} path='/profile' />
+                    <Route component={KyselyPage} path = '/feedback1' />
                 </Switch>
         </React.Fragment>
     </Router>
