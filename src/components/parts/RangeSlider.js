@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import RangeSlider from 'react-bootstrap-range-slider';
 import { Form, Col, Row } from 'react-bootstrap'
 

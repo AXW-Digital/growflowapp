@@ -158,6 +158,54 @@ const kyselyt = [
                     "Siideri",
                     "Viini"
                 ]
+            },
+            {
+                num: 13,
+                group: "Asteikolla 1-5, kuinka tärkeitä asioita nämä ovat sinulle",
+                title: "Miljöö",
+                type: "range",
+                min:1,
+                max:5
+            },
+            {
+                num: 14,
+                group: "Asteikolla 1-5, kuinka tärkeitä asioita nämä ovat sinulle",
+                title: "Palvelu",
+                type: "range",
+                min:1,
+                max:5
+            },
+            {
+                num: 15,
+                group: "Asteikolla 1-5, kuinka tärkeitä asioita nämä ovat sinulle",
+                title: "Hinta-laatu-suhde",
+                type: "range",
+                min:1,
+                max:5
+            },
+            {
+                num: 16,
+                group: "Asteikolla 1-5, kuinka tärkeitä asioita nämä ovat sinulle",
+                title: "Ruokalistan laajuus",
+                type: "range",
+                min:1,
+                max:5
+            },
+            {
+                num: 17,
+                group: "Asteikolla 1-5, kuinka tärkeitä asioita nämä ovat sinulle",
+                title: "Arvostelut netissä",
+                type: "range",
+                min:1,
+                max:5
+            },
+            {
+                num: 18,
+                group: "Asteikolla 1-5, kuinka tärkeitä asioita nämä ovat sinulle",
+                title: "Ystävien ja tuttavien suositukset",
+                type: "range",
+                min:1,
+                max:5
             }
         ]
     },
@@ -223,11 +271,140 @@ const kyselyt = [
                 type: "text"
             }
         ]
+    },
+
+    {
+        id: "3",
+        tyyppi: "custom",
+        kyselyTitle: "Taustakysely",
+        kysymykset: [
+            {
+                num: 1,
+                title: "Ikä",
+                type: "single",
+                choices: [
+                    'Alle 18',
+                    '19-25',
+                    '26-34',
+                    '35-49',
+                    '50-65',
+                    'Yli 65'
+                ]
+            },
+            {
+                num: 2,
+                title: "Sukupuoli",
+                type: "single",
+                choices: [
+                    'Nainen',
+                    'Mies',
+                    'Muu',
+                    'En halua vastata'
+                ]
+            },
+            {
+                num: 3,
+                title: "Asuinmuoto",
+                type: "single",
+                choices: [
+                    'Asun yksin',
+                    'Asun kaksin puolisoni kanssa',
+                    'Asun puolisoni ja lasten kanssa',
+                    'Olen yksinhuoltaja',
+                    'Asun vanhempien luona',
+                    'Asun kämppiksen kanssa/kimppakämpässä'
+
+                ]
+            },
+            {
+                num: 4,
+                title: "Asuinmuoto",
+                type: "single",
+                choices: [
+                    'Omistusasunto',
+                    'Vuokra-asunto',
+                    'Asumisoikeus',
+                    'Muu',
+
+
+                ]
+            },
+            {
+                num: 5,
+                title: "Koulutustaso",
+                type: "single",
+                choices: [
+                    'Peruskoulu',
+                    'Lukio/ammattikoulu/opisto',
+                    'Alempi korkeakoulututkinto',
+                    'Ylempi korkeakoulututkinto'
+
+                ]
+            },
+            {
+                num: 6,
+                title: "Ammattiasema",
+                type: "single",
+                choices: [
+                    'Johtaja',
+                    'Ylempi toimihenkilö',
+                    'Toimihenkilö',
+                    'Yrittäjä',
+                    'Työntekijä',
+                    'Eläkeläinen',
+                    'Opiskelija/koululainen',
+                    'Kotiäiti tai -isä',
+                    'Työtön',
+                    'Muu, mikä'
+                ]
+            },
+            {
+                num: 7,
+                title: "Tulotaso (joko henkkoht. tai kotitalouden yhteenlasketut)",
+                type: "single",
+                choices: [
+                    '20 000€',
+                    '20 000 - 50 000€',
+                    '50 001 - 100 000€',
+                    'Yli 100 000€',
+                    'En halua vastata'
+
+                ]
+            },
+            {
+                num: 7,
+                title: "Tulotaso (joko henkkoht. tai kotitalouden yhteenlasketut)",
+                type: "single",
+                choices: [
+                    '20 000€',
+                    '20 000 - 50 000€',
+                    '50 001 - 100 000€',
+                    'Yli 100 000€',
+                    'En halua vastata'
+
+                ]
+            },
+            {
+                num: 8,
+                title: "9.	Minua kiinnostaa, valitse kaikki sinua kiinnostavat aiheet ",
+                type: "multi",
+                choices: [
+                    'Ruoka',
+                    'Viihde',
+                    'Urheilu',
+                    'Lifestyle',
+                    'Asuminen',
+                    'Musiikki',
+                    'Tiede',
+                    'Matkailu',
+                    'Hyvinvointi'
+
+
+                ]
+            }
+        ]
     }
-
-
-
-
+    
 ];
 
 
