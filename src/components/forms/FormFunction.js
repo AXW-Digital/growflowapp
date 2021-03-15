@@ -6,7 +6,6 @@ function Choices(n) {
     const listItems = kyselyt.map((d) => d.kysymykset);
     const choices = listItems[0];
     const kys = choices.map((d) => d.choices);
-    // console.log(kys);
     return kys[n];
   }
 
