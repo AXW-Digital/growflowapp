@@ -14,7 +14,7 @@ class Header extends React.Component {
                 <Nav.Link className="mylinks" href="#menutestaus">Menutestaukset</Nav.Link>
             </Nav>
             <Nav className='ml-auto'>
-                <Nav.Link href="/signin" className="bx bxs-user bx-md signlinks"></Nav.Link>
+                <Nav.Link href="/profile" className="mylinks mr-2">Profiili</Nav.Link>
             </Nav>
             
             </Navbar.Collapse>

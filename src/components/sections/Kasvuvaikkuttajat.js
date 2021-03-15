@@ -1,5 +1,5 @@
 import React  from 'react';
-import {ReactComponent as Team} from './../assets/images/team.svg'
+import {ReactComponent as Team} from '../../assets/images/team.svg'
 import { Card } from 'react-bootstrap';
 
 

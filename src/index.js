@@ -8,14 +8,16 @@ import 'aos/dist/aos.css'
 //bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css'
+import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
 
 
 // React Components
 import App from './App';
-import Signin from './components/Signin';
-import Signup from './components/Signup';
+import Signin from './components/forms/Signin';
+import Signup from './components/forms/Signup';
 import HomePage from './pages/HomePage';
-import ProfilePage from './pages/ProfilePage'
+import ProfilePage from './pages/ProfilePage';
+import KyselyPage from './pages/KyselyPage'
 
 // RouterDOM
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -37,6 +39,7 @@ const Root = () => (
                     <Route component={Signup} path="/signup" />
                     <Route component={HomePage} path = "/home" />
                     <Route component={ProfilePage} path='/profile' />
+                    <Route component={KyselyPage} path = '/feedback1' />
                 </Switch>
         </React.Fragment>
     </Router>
