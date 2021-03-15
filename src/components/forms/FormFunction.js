@@ -6,16 +6,20 @@ function Choices(n) {
     const listItems = kyselyt.map((d) => d.kysymykset);
     const choices = listItems[0];
     const kys = choices.map((d) => d.choices);
-    console.log(kys);
+    // console.log(kys);
     return kys[n];
   }
 
   function CreateForm(x) {
+      var choices = kyselyt.map((d) => d.kysymykset)[0]
+      var type = choices.map((d) => d.type)
     return (
       <Form.Group>
         <Form.Label>{kyselyt.map((d) => d.kysymykset)[0].map((y) => y.title)[x]}</Form.Label>
-        <select>{Choices(x).map(x => <option>{x}</option>)}</select>
-        </Form.Group>
+        {type[x] === 'multi' ? 
+        <Form.Control as = 'select' multiple>{Choices(x).map(x => <option>{x}</option>)}</Form.Control> :
+        <Form.Control as = 'select' >{Choices(x).map(x => <option>{x}</option>)}</Form.Control>}
+    </Form.Group>
     );
   }
 
