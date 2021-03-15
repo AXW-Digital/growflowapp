@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
-import {Form} from 'react-bootstrap';
+import FormFunction from './FormFunction'
 
 export default class KyselyForm extends Component {
     render() {
         return (
             <div>
-               <Form>
-                   
-                </Form> 
+                <FormFunction />
             </div>
         )
     }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import KyselyForm from '../components/KyselyForm'
-import Header from '../components/HeaderHome';
-import Footer from '../components/Footer'
+import KyselyForm from '../components/forms/KyselyForm'
+import Header from '../components/parts/HeaderHome';
+import Footer from '../components/parts/Footer'
 
 
 export default class KyselyPage extends Component {

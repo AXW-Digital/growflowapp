@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ReactComponent as Data} from './../assets/images/datasvg.svg'
+import {ReactComponent as Data} from '../../assets/images/datasvg.svg'
 import { Card } from 'react-bootstrap';
 
 class Growflow extends Component {

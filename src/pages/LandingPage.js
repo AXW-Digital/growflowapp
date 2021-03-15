@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 //components
-import Header from './../components/Header';
-import Vaikuttava from './../components/Vaikuttava';
-import Kukkavoi from './../components/Kukkavoi'
-import Kasvuvaikkuttajat from './../components/Kasvuvaikkuttajat'
-import Growflow from './../components/Growflow'
-import Voima from './../components/Voima'
-import Footer from './../components/Footer'
+import Header from './../components/parts/Header';
+import Vaikuttava from './../components/sections/Vaikuttava';
+import Kukkavoi from './../components/sections/Kukkavoi'
+import Kasvuvaikkuttajat from './../components/sections/Kasvuvaikkuttajat'
+import Growflow from './../components/sections/Growflow'
+import Voima from './../components/sections/Voima'
+import Footer from './../components/parts/Footer'
 import AOS from 'aos';
 
 

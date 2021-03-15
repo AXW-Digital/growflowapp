@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import Header from '../components/HeaderHome';
-import Footer from '../components/Footer'
+import Header from '../components/parts/HeaderHome';
+import Footer from '../components/parts/Footer'
 import { ReactComponent as Ideas } from '../assets/images/ideas.svg'
 import cardvaluelist from '../assets/js/cardvalues'
-import {createCard} from '../components/CardFunctions'
-import {createActivityCard} from '../components/CardFunctions'
+import {createCard} from '../components/cards/CardFunctions'
+import {createActivityCard} from '../components/cards/CardFunctions'
 
 var Name = 'John Doe'
 

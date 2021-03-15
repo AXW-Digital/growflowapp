@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent as Nainen } from './../assets/images/nainen.svg';
+import {ReactComponent as Nainen } from '../../assets/images/nainen.svg';
 
 
 class Vaikuttava extends React.Component {

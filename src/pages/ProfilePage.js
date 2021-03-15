@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import HeaderHome from '../components/HeaderHome'
-import ProfileCard from '../components/ProfileCard'
-import SettingsCard from '../components/SettingsCard'
-import AvatarCard from '../components/AvatarCard'
+import HeaderHome from '../components/parts/HeaderHome'
+import ProfileCard from '../components/cards/ProfileCard'
+import SettingsCard from '../components/cards/SettingsCard'
+import AvatarCard from '../components/cards/AvatarCard'
 import cardvaluelist from '../assets/js/cardvalues'
-import { createSmallActivityCard } from '../components/CardFunctions'
+import { createSmallActivityCard } from '../components/cards/CardFunctions'
 
 
 

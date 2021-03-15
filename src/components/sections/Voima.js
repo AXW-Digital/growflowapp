@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent as Powerful} from './../assets/images/powerful.svg'
+import {ReactComponent as Powerful} from '../../assets/images/powerful.svg'
 import { Card } from 'react-bootstrap'
 
 

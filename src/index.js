@@ -13,8 +13,8 @@ import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
 
 // React Components
 import App from './App';
-import Signin from './components/Signin';
-import Signup from './components/Signup';
+import Signin from './components/forms/Signin';
+import Signup from './components/forms/Signup';
 import HomePage from './pages/HomePage';
 import ProfilePage from './pages/ProfilePage';
 import KyselyPage from './pages/KyselyPage'
