@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import RangeSlider from 'react-bootstrap-range-slider';
 import { Form, Col, Row } from 'react-bootstrap'
+import kyselyt from '../../assets/js/kyselyt'
 
 const SliderDist = () => {
 
@@ -21,7 +22,7 @@ const SliderDist = () => {
                         step={10}
                         min={20}
                         max={300}
-                        variant = 'warning'
+                        variant='warning'
                         tooltipPlacement='bottom'
                         tooltip='auto'
                     />
@@ -34,7 +35,7 @@ const SliderDist = () => {
     );
 };
 
-export {SliderDist}
+export { SliderDist }
 
 
 const SliderPrice = () => {
@@ -45,8 +46,8 @@ const SliderPrice = () => {
         <Form>
             <Form.Label>
                 <p>
-                    
-                    Annosten maksimihinta 
+
+                    Annosten maksimihinta
                 </p>
             </Form.Label>
             <Form.Group as={Row}>
@@ -57,7 +58,7 @@ const SliderPrice = () => {
                         step={2.5}
                         min={5}
                         max={50}
-                        variant = 'warning'
+                        variant='warning'
                         tooltipPlacement='bottom'
                         tooltip='auto'
                     />
@@ -70,5 +71,38 @@ const SliderPrice = () => {
     );
 };
 
-export {SliderPrice}
+export { SliderPrice }
 
+
+
+
+
+const SliderReview = (props) => {
+
+    const [value, setValue] = React.useState(3);
+
+    return (
+        <Form.Group as={Row}>
+            <Col xs="9">
+                <RangeSlider
+                    value={value}
+                    onChange={e => setValue(e.target.value)}
+                    step={1}
+                    min={props.min}
+                    max={props.max}
+                    variant='warning'
+                    tooltipPlacement='bottom'
+                    tooltip='auto'
+                    size='lg'
+                />
+            </Col>
+            <Col xs="3">
+                <Form.Control value={value} />
+            </Col>
+        </Form.Group>
+
+
+    );
+};
+
+export { SliderReview }
