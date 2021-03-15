@@ -2,7 +2,7 @@ const kyselyt = [
     {
         id: "1",
         tyyppi: "custom",
-        kyselyTitle: "PlaceholderTitle",
+        kyselyTitle: "Ravintolakysely",
         kysymykset: [
             {
                 num: 1,

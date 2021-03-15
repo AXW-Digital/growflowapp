@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import RangeSlider from 'react-bootstrap-range-slider';
 import { Form, Col, Row } from 'react-bootstrap'
-import kyselyt from '../../assets/js/kyselyt'
+
 
 const SliderDist = () => {
 
@@ -83,7 +83,7 @@ const SliderReview = (props) => {
 
     return (
         <Form.Group as={Row}>
-            <Col xs="9">
+            <Col xs="7" md='11'>
                 <RangeSlider
                     value={value}
                     onChange={e => setValue(e.target.value)}
@@ -96,7 +96,7 @@ const SliderReview = (props) => {
                     size='lg'
                 />
             </Col>
-            <Col xs="3">
+            <Col xs="5" md='1'>
                 <Form.Control value={value} />
             </Col>
         </Form.Group>

@@ -10,17 +10,15 @@ export default class KyselyPage extends Component {
     // This jquery function enables toggle of multiple select forms
     componentDidMount() {
         $("select[multiple] option").mousedown(function(){
-            var $self = $(this);
-         
+            var $self = $(this);         
             if ($self.prop("selected"))
                    $self.prop("selected", false);
             else
-                $self.prop("selected", true);
-         
+                $self.prop("selected", true);         
             return false;
          });
     }
-    
+
     render() {
         return (
             <div>
@@ -28,7 +26,7 @@ export default class KyselyPage extends Component {
                 <div id='page-top'> </div>
                 <section id='kysely' className='bg-light'>
                     <div className='container'>
-                        <KyselyForm/>
+                        <KyselyForm question = {0}/>
                     </div>
                 </section>
                 <Footer />

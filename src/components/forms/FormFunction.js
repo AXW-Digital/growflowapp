@@ -15,15 +15,15 @@ function CreateForm(x, q) {
     var type = choices.map((d) => d.type)[x]
     var min = choices.map((d) => d.min)[x]
     var max = choices.map((d) => d.max)[x]
-    console.log(min, max)
+    var key = choices.map((d) => d.num)[x]
     return (
-        <Form.Group>
-            <Form.Label>{kyselyt.map((d) => d.kysymykset)[q].map((y) => y.title)[x]}</Form.Label>
+        <Form.Group key = {key}>
+            <Form.Label key = {key + '_1'}>{kyselyt.map((d) => d.kysymykset)[q].map((y) => y.title)[x]}</Form.Label>
             {
-                type === 'multi' ?  <Form.Control as='select' multiple htmlSize={Choices(x, q).length}>{Choices(x, q).map(x => <option>{x}</option>)}</Form.Control> :
-                type === 'single' ? <Form.Control as='select' >{Choices(x, q).map(x => <option>{x}</option>)}</Form.Control> :
-                type === 'range' ? <SliderReview min = {min} max = {max} />:
-                <Form.Control as='textarea' ></Form.Control>
+                type === 'multi' ?  <Form.Control key = {key + '_2'} as='select' multiple htmlSize={Choices(x, q).length}>{Choices(x, q).map(x => <option>{x}</option>)}</Form.Control> :
+                type === 'single' ? <Form.Control key = {key + '_2'} as='select' >{Choices(x, q).map(x => <option>{x}</option>)}</Form.Control> :
+                type === 'range' ? <SliderReview key = {key + '_2'} min = {min} max = {max} />:
+                <Form.Control as='textarea' key = {key + '_2'} ></Form.Control>
             }
         </Form.Group>
     );
