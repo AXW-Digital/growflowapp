@@ -1837,3 +1837,6 @@ Kysely Page CSS
   min-height: calc(100vh - var(--header-height));
   margin: var(--header-height) 0 0 0; 
 }
+#kysely select {
+  overflow-y: auto;
+}

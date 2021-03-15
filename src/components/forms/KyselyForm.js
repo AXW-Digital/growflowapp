@@ -6,7 +6,7 @@ export default class KyselyForm extends Component {
     render() {
         return (
             <Form>
-                <FormFunction />
+                <FormFunction question = {1}/>
             </Form>
         )
     }

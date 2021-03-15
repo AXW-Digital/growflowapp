@@ -17,6 +17,7 @@
     "bootstrap-css-only": "^4.4.1",
     "brand-colors": "^2.1.1",
     "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.0",
     "react-bootstrap-range-slider": "^2.0.2",
