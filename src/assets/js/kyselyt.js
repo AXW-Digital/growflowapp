@@ -192,12 +192,12 @@ const kyselyt = [
           { num : 5,
             title: "Mikä oli hyvää?",
             type: "multi",
-            choices: {
-              a: "maku",
-              b: "hinta",
-              c: "laatu",
-              d: "annoskoko"
-            }
+            choices: [
+              "maku",
+              "hinta",
+              "laatu",
+              "annoskoko"
+            ]
           },
           { num: 6,
             title: "Mitä voisi kehittää?",
