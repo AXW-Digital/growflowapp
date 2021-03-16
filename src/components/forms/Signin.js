@@ -47,7 +47,7 @@ class Signin extends Component {
                                         <div className='row mt-1'>
                                             <div className='col text-center text-nowrap'>Ei käyttäjätunnusta?</div>
                                             <div className='col text-center'>
-                                                <a href='/home' className='link-primary'>Rekisteröidy</a>
+                                                <a href='/signup' className='link-primary'>Rekisteröidy</a>
                                             </div>
                                         </div>
                                     </form>

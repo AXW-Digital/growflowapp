@@ -7,7 +7,7 @@ class Voima extends React.Component {
     render() {
         return (
             <div>
-                <section id="voima" className="d-flex align-items-center">
+                <section id="voima" className="d-flex align-items-center bg-white">
                     <div className="container">
                     <div className="row">
                         <div className="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1">
