@@ -1,20 +1,18 @@
-# pull official base image
-FROM node:13.12.0-alpine
+# get the base node image
+FROM node:alpine as builder
 
-# set working directory
-WORKDIR /app
+# set the working dir for container
+WORKDIR /frontend
 
-# add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
-
-# install app dependencies
-COPY package.json ./
+# copy the json file first
+COPY ./package.json /frontend
 COPY package-lock.json ./
-RUN npm install --silent
-RUN npm install react-scripts@3.4.1 -g --silent
 
-# add app
-COPY . ./
+# install npm dependencies
+RUN npm install
 
-# start app
-CMD ["npm", "start"]
+# copy other project files
+COPY . .
+
+# build the folder
+CMD [ "npm", "run", "start" ]
