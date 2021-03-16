@@ -6,7 +6,7 @@ const cardvaluelist = [
         picUrl: '/img/mcd.jfif',
         formTitle: 'McFeedback™',
         formText: 'Miten meillä meni? Anna palautetta viimeisimmästä ravintolakäynnistäsi ja auta meitä kehittämään toimintaamme.',
-        formUrl: '/feedback1',
+        formUrl: '/survey0',
         color: 'blue',
         minutes: '(3 min)',
         tyyppi: 'Vastaa'
@@ -18,7 +18,7 @@ const cardvaluelist = [
         picUrl: '/img/beef.jfif',
         formTitle: 'Menutestaus Helsinki',
         formText: 'Uusi French Beef. Valkosipulisämpylän välissä kaksi 100% naudanlihapihviä, siivu emmental-sulatejuustoa, kaksi viipaletta pekonia ja bataviasalaattia.',
-        formUrl: '#',
+        formUrl: '/survey1',
         color: 'purple',
         tyyppi: 'Osallistu'
     },
@@ -40,7 +40,7 @@ const cardvaluelist = [
         picUrl: '/img/hese.jpg',
         formTitle: 'Kiitä, moiti, kysy tai ehdota',
         formText: 'Saitko Hesburgerissa erityisen mukavaa palvelua? Huomasitko jossain parantamisen varaa? Haluaisitko valikoimiimme uusia tuotteita? Kaikki palaute on meille arvokasta. ',
-        formUrl: '#',
+        formUrl: '/survey1',
         color: 'green',
         minutes: '(5 min)',
         tyyppi: 'Vastaa'
@@ -65,7 +65,7 @@ const cardvaluelist = [
         picUrl: '/img/burgerking.jpeg',
         formTitle: 'Oma BK-Kokemukseni',
         formText: 'Tervetuloa Minun BURGER KING® -kokemukseni -kyselyyn. Arvostamme rehellistä palautettasi ja sitä, että käytät aikaasi kyselyyn vastaamiseen.',
-        formUrl: '#',
+        formUrl: '/survey2',
         color: 'red',
         minutes: '(10 min)',
         tyyppi: 'Vastaa'

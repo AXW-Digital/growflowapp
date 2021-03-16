@@ -39,7 +39,7 @@ const Root = () => (
                     <Route component={Signup} path="/signup" />
                     <Route component={HomePage} path = "/home" />
                     <Route component={ProfilePage} path='/profile' />
-                    <Route component={KyselyPage} path = '/feedback1' />
+                    <Route component={KyselyPage} path = '/survey:id'/>
                 </Switch>
         </React.Fragment>
     </Router>
