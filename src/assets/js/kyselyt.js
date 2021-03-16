@@ -386,7 +386,7 @@ const kyselyt = [
             },
             {
                 num: 8,
-                title: "9.	Minua kiinnostaa, valitse kaikki sinua kiinnostavat aiheet ",
+                title: "Minua kiinnostaa, valitse kaikki sinua kiinnostavat aiheet ",
                 type: "multi",
                 choices: [
                     'Ruoka',

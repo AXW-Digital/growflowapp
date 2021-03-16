@@ -83,7 +83,7 @@ const SliderReview = (props) => {
 
     return (
         <Form.Group as={Row}>
-            <Col xs="7" md='11'>
+            <Col xs="9" md='11'>
                 <RangeSlider
                     value={value}
                     onChange={e => setValue(e.target.value)}
@@ -96,7 +96,7 @@ const SliderReview = (props) => {
                     size='lg'
                 />
             </Col>
-            <Col xs="5" md='1'>
+            <Col xs="3" md='1'>
                 <Form.Control value={value} />
             </Col>
         </Form.Group>

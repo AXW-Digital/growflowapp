@@ -5,6 +5,9 @@ import Footer from '../components/parts/Footer'
 import $ from 'jquery';
 
 
+
+
+
 export default class KyselyPage extends Component {
     
     // This jquery function enables toggle of multiple select forms
@@ -19,14 +22,17 @@ export default class KyselyPage extends Component {
          });
     }
 
+    
+
     render() {
+        console.log(this.props.match.params.id)
         return (
             <div>
                 <Header />
                 <div id='page-top'> </div>
                 <section id='kysely' className='bg-light'>
                     <div className='container'>
-                        <KyselyForm question = {0}/>
+                        <KyselyForm question = {this.props.match.params.id}/>
                     </div>
                 </section>
                 <Footer />
