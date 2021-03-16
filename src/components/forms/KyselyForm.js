@@ -8,7 +8,7 @@ export default class KyselyForm extends Component {
         var title = kyselyt.map((d) => d.kyselyTitle)[this.props.question]
         return (
             <div>
-            <h3>{title}</h3>
+            <h2>{title}</h2>
             <Form>
                 <FormFunction question = {this.props.question}/>
             </Form>

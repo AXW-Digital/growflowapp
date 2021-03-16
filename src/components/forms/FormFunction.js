@@ -13,11 +13,20 @@ function Choices(n, q) {
 function CreateForm(x, q) {
     var choices = kyselyt.map((d) => d.kysymykset)[q]
     var type = choices.map((d) => d.type)[x]
+    var group = choices.map((d) => d.group)
     var min = choices.map((d) => d.min)[x]
     var max = choices.map((d) => d.max)[x]
     var key = choices.map((d) => d.num)[x]
-    return (
+    var new_group = false
+    var draw_line = false
+    if (x === 0 || group[x] !== group[x-1]){new_group = true} else { new_group = false}
+    if (x !== 0 && new_group === true){draw_line = true} else { draw_line = false}
+
+    return (        
+        
         <Form.Group key = {key}>
+        { draw_line ? <hr className = 'group-line' />: null}
+        { new_group ? <h4 className = 'group-name'>{group[x]}</h4>: null}
             <Form.Label key = {key + '_1'}>{kyselyt.map((d) => d.kysymykset)[q].map((y) => y.title)[x]}</Form.Label>
             {
                 type === 'multi' ?  <Form.Control key = {key + '_2'} as='select' multiple htmlSize={Choices(x, q).length}>{Choices(x, q).map(x => <option>{x}</option>)}</Form.Control> :
@@ -26,6 +35,7 @@ function CreateForm(x, q) {
                 <Form.Control as='textarea' key = {key + '_2'} ></Form.Control>
             }
         </Form.Group>
+
     );
 }
 
