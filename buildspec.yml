@@ -1,0 +1,22 @@
+---
+phases: 
+  build: 
+    commands: 
+      - "echo Build started on `date`"
+      - "echo Building the Docker image..."
+      - "docker build -t react-frontend ."
+      - "docker tag react-frontend 740126133497.dkr.ecr.eu-north-1.amazonaws.com/insight_front"
+  post_build: 
+    commands: 
+      - "echo Build completed on `date`"
+      - "echo Pushing the Docker image..."
+      - "docker push 740126133497.dkr.ecr.eu-north-1.amazonaws.com/insight_front"
+  pre_build: 
+    commands: 
+      - "echo Logging in to AWS..."
+      - "docker login -u AWS -p eyJwYXlsb2FkIjoiYWd4R2FZdkhXcWJLR1pZQlpKeHp2MGpiR1VCQmdBeW9zaHY4QjBoUy82cVdtakRMVzY3SmxsZHJVdjlaVTk2MTNuajEyaVBFT3lJQkhzamUwUHBKVWp1dktrQU1aQkZmajRIZlRTTmVwb0loWFVqZVZWM0Z2Z1ViRmo3b2wxbnE3YmhPbnhkQlJPY0IyV3NjK0IyY1A4aG8rZjJxTURReUgrR3VzWVVCakwwa3BUK3h0aXV5ZkxtTGpWUVQyUWtmME1LNk9SNzdVMWgyQ2c3cVVPaGxSbUh2N2w1dXJBemVMZWozL3FRQUIxdnYrUmZKSHRTc3Zhdy9tMFlGb3dTY25rbDhTSGpXUE9pSTNhUG4wblhkemxQKzZMQ1I1T1NNeUN5alhzWDBEeDhNUlpIakp2bWtEek9SWCtEaGJWR2MvSWptNkFmWEZSRWpNYzBqZW1jMEVDZjY0N2ZjOHh4ZTdvNzR5WEoxSElzNGxqMmdqSjBmcGJraVdSUnVTM1U0NE5Pd2ozbWlVQnJGM0dXOGlxM1pxWC9PeUx1TVRaNkZxaFZwdGp5Zm42V2RJQjlMRVhQNUpPY1JTS29jTFEzWi90akN2blNWNlZJek1pVUxEamRRdlBDc1Q1Nzd6d1ZjZTdBMjJaNVpmQ2FnTS9id3VISkRqeEVwWHRvT2J5OHBzMFRRcGZDdkNlN2xBU3VGL3JFNkdRQnpudXBDS3BZZ1NMMXZmM2hUenRLZ1QzMkhHODdzSVBibmlCTm9mU2w0QXhBMi9tcHkxcmVSNmJYTUF4M1NBYVJDSy9HaVluTDZ4TXdqOGRuQU1CV1BtTTdrSzFQQVA0MmdwQ25wUGhXamg1bzFaS0Nyby8rRkZYVVNpZi9zaWFvN2NTSXFvRUk1VTlNWkIxVG8wVTBSVmpwR3NQZHRGR2E5OHk4NVZWK1Zzb1NiT1NPdjNVRTNTcm9qVDgybWIyVEdwSkd0NjgweFV0eWZWemVGVmhnMnEyYSthYUpmbUlqdW9makt5VnVvaStDUUhKai9PdkZzVFpmNkJNMytJUzJETFZFZkNtRXJVby84V0tiWWt3b2Qrb1o4Tm9Ha2ZtVFVOZmpPU2NQOCszRERJa2o1cDdOWDJDK0FRMXUwTmRBcHBTWXdyOXJTWi9NSklVbUliSlVYVmxiRnppT1dZQWgrU1ViKzJQOVZrMzNMZk1Nd2hMd01QZjdMUEVQYVNna28xOUlzaE1Xd3NrMDB0ZTFzaGJWUXZFVm5JZmh5c0pNS0RUSU9rYWJ6VUN2SFpML1BDTUtUc2RIUmVFbFZqTEI4N3Z1NGpYaXROOTIrQkkyd0lqMDhYL1VHRGxqcXRqWVBpWG5MRzh6dUNMVFpKOGZXTGdNZFhweFJ5SkwraFVOa2kyNUlJVDYxelQwL05JTjdpb2YxY2JaeCt5Y0JDb1JqQjMrQ3VLMW1IcEcrSW1xMG9UZS9UWGFoM2ZrOVBEVjMxS1Z2WnNxaWdRPT0iLCJkYXRha2V5IjoiQVFJQkFIaGZyRlEyYUlJd0Y1VmM3OVJIRVBHbmNVV3VyMi9Kek04dC9aem9FdFJyQWdFdjdnT3hRRWkxRlcya1BDVFowY1UwQUFBQWZqQjhCZ2txaGtpRzl3MEJCd2FnYnpCdEFnRUFNR2dHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNRy90MTNSTHhxakxnOVhQZ0FnRVFnRHZFbTdTRGJCVzlZaFVORVMvNDRzaCtPK2s5WTJlbGVjNllYZ3lvQTVNOEhDc3JxRmVNR2JGOGNBaHQ1aERHK3AybzZHS0RoSVNyaTFmUnNRPT0iLCJ2ZXJzaW9uIjoiMiIsInR5cGUiOiJEQVRBX0tFWSIsImV4cGlyYXRpb24iOjE2MTU5NDU3MjB9 740126133497.dkr.ecr.eu-north-1.amazonaws.com"
+artifacts:
+  files: 
+    - "**/*"
+  name: "s3-to-s3-latest-build.zip" 
+version: 0.1
