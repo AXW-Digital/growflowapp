@@ -1,5 +1,5 @@
 # get the base node image
-FROM node:alpine as builder
+FROM node:alpine
 
 # set the working dir for container
 WORKDIR /frontend
