@@ -4,8 +4,8 @@ phases:
     commands: 
       - "echo Build started on `date`"
       - "echo Building the Docker image..."
-      - "docker-compose -f docker-compose.yml up -d"
-      - "docker tag growflowapp_frontend 740126133497.dkr.ecr.eu-north-1.amazonaws.com/insight_front"
+      - "docker build -t react-frontend ."
+      - "docker tag react-frontend 740126133497.dkr.ecr.eu-north-1.amazonaws.com/insight_front"
   post_build: 
     commands: 
       - "echo Build completed on `date`"

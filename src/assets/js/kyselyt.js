@@ -103,7 +103,9 @@ const kyselyt = [
                     "Keitto",
                     "Salaatti",
                     "Aasialainen",
-                    "Burgeri"
+                    "Burgeri",
+                    "listää",
+                    "vaihtoehtoja"
                 ]
             },
             {
