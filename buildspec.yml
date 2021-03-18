@@ -4,8 +4,8 @@ phases:
     commands: 
       - "echo Build started on `date`"
       - "echo Building the Docker image..."
-      - "docker build -t AXW-Digital/growflowapp ."
-      - "docker tag AXW-Digital/growflowapp 740126133497.dkr.ecr.eu-north-1.amazonaws.com/insight_front"
+      - "docker build -t axw-digital/growflowapp ."
+      - "docker tag axw-digital/growflowapp 740126133497.dkr.ecr.eu-north-1.amazonaws.com/insight_front"
   post_build: 
     commands: 
       - "echo Build completed on `date`"
